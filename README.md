@@ -135,14 +135,14 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     GITHUB ANALYTICS
+     ENGINEERING METRICS
 ═══════════════════════════════════════════════════════════════════ -->
 
-## 📊 GitHub Analytics
+## ⚡ Engineering Metrics
 
 <div align="center">
 
-![Mohamed Anas A — GitHub Analytics Dashboard](github_stats.svg)
+![Mohamed Anas A — Engineering Metrics Dashboard](github_stats.svg)
 
 </div>
 

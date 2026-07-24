@@ -168,10 +168,10 @@
 
   <!-- Header Title Bar -->
   <g transform="translate(48, 36)">
-    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="18" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">📊 GITHUB ANALYTICS</text>
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="18" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">⚡ ENGINEERING METRICS</text>
 
     <!-- System Status Badge -->
-    <g transform="translate(210, -12)">
+    <g transform="translate(245, -12)">
       <rect width="180" height="22" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
       <circle cx="14" cy="11" r="3.5" fill="#22C55E" filter="url(#gs-glow-pulse)">
         <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
