@@ -75,12 +75,7 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 
 <div align="center">
 
-| 🏗️ Building | 📚 Learning | 🎯 Goals |
-|:---:|:---:|:---:|
-| Scalable Full Stack Applications | AWS & Cloud Architecture | Contribute to Open Source |
-| RESTful APIs with Spring Boot | Kubernetes Orchestration | Build SaaS Products |
-| React SPAs with modern patterns | DevOps & CI/CD Pipelines | AWS Certification |
-| Dockerized microservices | System Design & Architecture | Full-time Developer Role |
+![Mohamed Anas A — Current Focus Dashboard](current_focus.svg)
 
 </div>
 

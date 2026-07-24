@@ -1,0 +1,417 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 350" width="1180" height="350" role="img" aria-label="Current Focus Dashboard — Mohamed Anas A">
+  <defs>
+    <!-- Dark Canvas Background -->
+    <linearGradient id="cf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Radial Glow Highlights -->
+    <radialGradient id="cf-glow-left" cx="15%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cf-glow-center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cf-glow-right" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cf-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.68"/>
+    </linearGradient>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="cf-border-anim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#8B5CF6;#06B6D4;#3B82F6" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4;#3B82F6;#8B5CF6;#06B6D4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Progress Bar Gradients -->
+    <linearGradient id="prog-building" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="prog-learning" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="prog-goals" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cf-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.3"/>
+      <circle cx="0" cy="0" r="1" fill="#3B82F6" fill-opacity="0.3"/>
+    </pattern>
+
+    <!-- Filters & Shadows -->
+    <filter id="cf-card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="cf-glow-pulse" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes float-anim-1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes float-anim-2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes float-anim-3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes rotate-gear {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes flip-book {
+      0%, 100% { transform: scaleX(1); opacity: 0.95; }
+      50% { transform: scaleX(0.65); opacity: 0.45; }
+    }
+    @keyframes radar-pulse {
+      0% { r: 5px; opacity: 0.9; stroke-width: 2px; }
+      100% { r: 20px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes particle-drift {
+      0%, 100% { opacity: 0.15; transform: translate(0, 0); }
+      50% { opacity: 0.65; transform: translate(15px, -15px); }
+    }
+    @keyframes cicd-pulse {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .cf-float-1 { animation: float-anim-1 6s ease-in-out infinite; }
+    .cf-float-2 { animation: float-anim-2 6s ease-in-out infinite 1.8s; }
+    .cf-float-3 { animation: float-anim-3 6s ease-in-out infinite 3.6s; }
+
+    /* Glass Card Hover Animations */
+    .glass-card {
+      transition: transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+    }
+    .glass-card:hover {
+      transform: translateY(-8px) scale(1.025);
+      filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.75));
+    }
+
+    .gear-icon { transform-origin: 22px 22px; animation: rotate-gear 10s linear infinite; }
+    .book-page { transform-origin: 22px 22px; animation: flip-book 3.2s ease-in-out infinite; }
+    .radar-circle { animation: radar-pulse 2.6s ease-out infinite; }
+    
+    .bg-particle { animation: particle-drift 10s ease-in-out infinite alternate; }
+    .pipeline-line { stroke-dasharray: 8, 8; animation: cicd-pulse 2s linear infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cf-float-1, .cf-float-2, .cf-float-3, .gear-icon, .book-page, .radar-circle, .bg-particle, .pipeline-line {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Container Canvas Background -->
+  <rect width="1180" height="350" rx="20" fill="url(#cf-bg)"/>
+
+  <!-- Radial Glow Background Highlights -->
+  <rect width="1180" height="350" rx="20" fill="url(#cf-glow-left)"/>
+  <rect width="1180" height="350" rx="20" fill="url(#cf-glow-center)"/>
+  <rect width="1180" height="350" rx="20" fill="url(#cf-glow-right)"/>
+
+  <!-- Circuit & Grid Overlay -->
+  <rect width="1180" height="350" rx="20" fill="url(#cf-grid)"/>
+
+  <!-- Floating Micro Particles & Accents -->
+  <g opacity="0.55">
+    <circle cx="90" cy="45" r="1.5" fill="#3B82F6" class="bg-particle"/>
+    <circle cx="590" cy="30" r="2.0" fill="#06B6D4" class="bg-particle" style="animation-delay: -3s;"/>
+    <circle cx="1060" cy="65" r="1.5" fill="#8B5CF6" class="bg-particle" style="animation-delay: -6s;"/>
+    <text x="48" y="332" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8" opacity="0.35">&lt;devops_pipeline&gt;</text>
+    <text x="1040" y="332" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC" opacity="0.35">&lt;/devops_pipeline&gt;</text>
+  </g>
+
+  <!-- Outer Canvas Border -->
+  <rect x="1" y="1" width="1178" height="348" rx="19" fill="none" stroke="url(#cf-border-anim)" stroke-width="1.5"/>
+
+  <!-- Header Title Bar -->
+  <g transform="translate(48, 38)">
+    <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="18" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">🎯 CURRENT FOCUS</text>
+
+    <!-- System Live Indicator -->
+    <g transform="translate(200, -12)">
+      <rect width="168" height="22" rx="11" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="14" cy="11" r="3.5" fill="#22C55E" filter="url(#cf-glow-pulse)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="24" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#34D399">PIPELINE: ACTIVE</text>
+    </g>
+
+    <text x="964" y="0" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8" text-anchor="end">// Continuous Growth &amp; Cloud Native</text>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CONNECTING CI/CD PIPELINE PATHS                                   -->
+  <!-- ================================================================= -->
+  <g fill="none" opacity="0.9">
+    <path d="M 390 185 L 420 185" stroke="#3B82F6" stroke-width="2.5" class="pipeline-line"/>
+    <path d="M 760 185 L 790 185" stroke="#06B6D4" stroke-width="2.5" class="pipeline-line"/>
+
+    <!-- Travelling CI/CD Data Packets -->
+    <circle cx="405" cy="185" r="4.5" fill="#38BDF8" filter="url(#cf-glow-pulse)">
+      <animate attributeName="cx" values="390;420;390" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="775" cy="185" r="4.5" fill="#34D399" filter="url(#cf-glow-pulse)">
+      <animate attributeName="cx" values="760;790;760" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CARD 1: BUILDING (X=48)                                          -->
+  <!-- ================================================================= -->
+  <g transform="translate(48, 54)">
+    <g class="cf-float-1 glass-card" filter="url(#cf-card-shadow)">
+      <!-- Card Frame -->
+      <rect width="342" height="248" rx="18" fill="url(#cf-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
+      <!-- Top Specular Highlight Strip -->
+      <rect x="2" y="2" width="338" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.18"/>
+      <rect width="342" height="248" rx="18" fill="none" stroke="url(#cf-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
+
+      <!-- Card Header -->
+      <g transform="translate(20, 18)">
+        <rect width="44" height="44" rx="12" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
+        <!-- Animated Gear Icon -->
+        <g transform="translate(2, 2)">
+          <path d="M20 12a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z" fill="#3B82F6"/>
+          <path d="M20 8v3m0 18v3m12-12h-3M11 20H8m20.5-8.5l-2.1 2.1M11.6 26.4l-2.1 2.1m17-17l-2.1 2.1M11.6 13.6l-2.1-2.1" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" class="gear-icon"/>
+        </g>
+        <text x="58" y="23" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">BUILDING</text>
+        <text x="58" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#60A5FA">Active Projects</text>
+
+        <!-- Status Pill -->
+        <rect x="238" y="10" width="64" height="20" rx="10" fill="#2563EB" fill-opacity="0.2" stroke="#3B82F6" stroke-width="0.8"/>
+        <circle cx="248" cy="20" r="2.5" fill="#38BDF8"/>
+        <text x="256" y="23" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#93C5FD">ACTIVE</text>
+      </g>
+
+      <!-- Divider Line -->
+      <line x1="20" y1="74" x2="322" y2="74" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Progress Bars -->
+      <g transform="translate(20, 88)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Spring Boot APIs</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="end">95%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="286" height="7" rx="3.5" fill="url(#prog-building)">
+          <animate attributeName="width" from="0" to="286" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="286" cy="19.5" r="4.5" fill="#38BDF8" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 124)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">React Applications</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="end">88%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="265" height="7" rx="3.5" fill="url(#prog-building)">
+          <animate attributeName="width" from="0" to="265" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="265" cy="19.5" r="4.5" fill="#38BDF8" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 160)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Docker Containers</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="end">82%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="247" height="7" rx="3.5" fill="url(#prog-building)">
+          <animate attributeName="width" from="0" to="247" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="247" cy="19.5" r="4.5" fill="#38BDF8" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 196)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Full Stack Projects</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="end">90%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="271" height="7" rx="3.5" fill="url(#prog-building)">
+          <animate attributeName="width" from="0" to="271" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="271" cy="19.5" r="4.5" fill="#38BDF8" filter="url(#cf-glow-pulse)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CARD 2: LEARNING (X=418)                                         -->
+  <!-- ================================================================= -->
+  <g transform="translate(418, 54)">
+    <g class="cf-float-2 glass-card" filter="url(#cf-card-shadow)">
+      <!-- Card Frame -->
+      <rect width="342" height="248" rx="18" fill="url(#cf-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
+      <!-- Top Specular Highlight Strip -->
+      <rect x="2" y="2" width="338" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.18"/>
+      <rect width="342" height="248" rx="18" fill="none" stroke="url(#cf-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
+
+      <!-- Card Header -->
+      <g transform="translate(20, 18)">
+        <rect width="44" height="44" rx="12" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
+        <!-- Animated Book Icon -->
+        <g transform="translate(2, 2)">
+          <path d="M10 9a2 2 0 012-2h12a2 2 0 012 2v16a2 2 0 01-2 2H12a2 2 0 01-2-2V9z" fill="none" stroke="#06B6D4" stroke-width="2" class="book-page"/>
+          <path d="M18 7v20" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="2,2"/>
+        </g>
+        <text x="58" y="23" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">LEARNING</text>
+        <text x="58" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">Cloud &amp; Architecture</text>
+
+        <!-- Status Pill -->
+        <rect x="230" y="10" width="72" height="20" rx="10" fill="#0891B2" fill-opacity="0.2" stroke="#06B6D4" stroke-width="0.8"/>
+        <circle cx="240" cy="20" r="2.5" fill="#34D399"/>
+        <text x="248" y="23" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#A5F3FC">EXPANDING</text>
+      </g>
+
+      <!-- Divider Line -->
+      <line x1="20" y1="74" x2="322" y2="74" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Progress Bars -->
+      <g transform="translate(20, 88)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">AWS Cloud</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34D399" text-anchor="end">75%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="226" height="7" rx="3.5" fill="url(#prog-learning)">
+          <animate attributeName="width" from="0" to="226" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="226" cy="19.5" r="4.5" fill="#34D399" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 124)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Kubernetes</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34D399" text-anchor="end">65%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="196" height="7" rx="3.5" fill="url(#prog-learning)">
+          <animate attributeName="width" from="0" to="196" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="196" cy="19.5" r="4.5" fill="#34D399" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 160)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">DevOps</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34D399" text-anchor="end">70%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="211" height="7" rx="3.5" fill="url(#prog-learning)">
+          <animate attributeName="width" from="0" to="211" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="211" cy="19.5" r="4.5" fill="#34D399" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 196)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">System Design</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34D399" text-anchor="end">60%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="181" height="7" rx="3.5" fill="url(#prog-learning)">
+          <animate attributeName="width" from="0" to="181" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="181" cy="19.5" r="4.5" fill="#34D399" filter="url(#cf-glow-pulse)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CARD 3: GOALS (X=788)                                            -->
+  <!-- ================================================================= -->
+  <g transform="translate(788, 54)">
+    <g class="cf-float-3 glass-card" filter="url(#cf-card-shadow)">
+      <!-- Card Frame -->
+      <rect width="342" height="248" rx="18" fill="url(#cf-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
+      <!-- Top Specular Highlight Strip -->
+      <rect x="2" y="2" width="338" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.18"/>
+      <rect width="342" height="248" rx="18" fill="none" stroke="url(#cf-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
+
+      <!-- Card Header -->
+      <g transform="translate(20, 18)">
+        <rect width="44" height="44" rx="12" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-opacity="0.4"/>
+        <!-- Animated Radar Target Icon -->
+        <g transform="translate(22, 22)">
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#8B5CF6" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="4" fill="#8B5CF6"/>
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#C084FC" class="radar-circle"/>
+        </g>
+        <text x="58" y="23" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">GOALS</text>
+        <text x="58" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#C084FC">Milestones 2025</text>
+
+        <!-- Status Pill -->
+        <rect x="238" y="10" width="64" height="20" rx="10" fill="#7C3AED" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="0.8"/>
+        <circle cx="248" cy="20" r="2.5" fill="#C084FC"/>
+        <text x="256" y="23" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#DDD6FE">TARGET</text>
+      </g>
+
+      <!-- Divider Line -->
+      <line x1="20" y1="74" x2="322" y2="74" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Progress Bars -->
+      <g transform="translate(20, 88)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Open Source</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#C084FC" text-anchor="end">Active</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="256" height="7" rx="3.5" fill="url(#prog-goals)">
+          <animate attributeName="width" from="0" to="256" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="256" cy="19.5" r="4.5" fill="#C084FC" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 124)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">AWS Certification</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#C084FC" text-anchor="end">70%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="211" height="7" rx="3.5" fill="url(#prog-goals)">
+          <animate attributeName="width" from="0" to="211" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="211" cy="19.5" r="4.5" fill="#C084FC" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 160)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">SaaS Products</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#C084FC" text-anchor="end">65%</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="196" height="7" rx="3.5" fill="url(#prog-goals)">
+          <animate attributeName="width" from="0" to="196" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="196" cy="19.5" r="4.5" fill="#C084FC" filter="url(#cf-glow-pulse)"/>
+      </g>
+
+      <g transform="translate(20, 196)">
+        <text x="0" y="10" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#E2E8F0">Full Stack Career</text>
+        <text x="302" y="10" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#C084FC" text-anchor="end">Target</text>
+        <rect x="0" y="16" width="302" height="7" rx="3.5" fill="#0F172A"/>
+        <rect x="0" y="16" width="286" height="7" rx="3.5" fill="url(#prog-goals)">
+          <animate attributeName="width" from="0" to="286" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+        </rect>
+        <circle cx="286" cy="19.5" r="4.5" fill="#C084FC" filter="url(#cf-glow-pulse)"/>
+      </g>
+    </g>
+  </g>
+
+</svg>
