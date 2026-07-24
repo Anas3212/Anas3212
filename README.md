@@ -149,7 +149,7 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     CONTRIBUTION GRAPH
+     CONTRIBUTION GRAPH & SNAKE ANIMATION
 ═══════════════════════════════════════════════════════════════════ -->
 
 ## 📈 Contribution Activity
@@ -157,6 +157,14 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 <div align="center">
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Anas3212&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=7C3AED&line=22D3EE&point=10B981&area=true&area_color=7C3AED)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anas3212/Anas3212/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anas3212/Anas3212/output/github-contribution-grid-snake.svg">
+  <img alt="Mohamed Anas A — GitHub Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/Anas3212/Anas3212/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</picture>
 
 </div>
 
