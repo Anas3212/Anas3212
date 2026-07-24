@@ -59,28 +59,11 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 
 ## 🧑‍💻 About Me
 
-```yaml
-name:       Mohamed Anas A
-role:       Full Stack Developer
-location:   Coimbatore, Tamil Nadu, India
-education:  B.E Computer Science & Engineering
-college:    Sri Eshwar College of Engineering
-```
+<div align="center">
 
-| | |
-|---|---|
-| 📍 | Coimbatore, Tamil Nadu, India |
-| 🎓 | B.E Computer Science and Engineering |
-| 🏫 | Sri Eshwar College of Engineering |
-| 💻 | Full Stack Development (Java + React) |
-| ☕ | Java & Spring Boot backend engineering |
-| ⚛️ | React for modern, interactive frontends |
-| ☁️ | AWS — learning cloud-native architecture |
-| 🐳 | Docker — containerizing everything |
-| 🚀 | Learning Kubernetes orchestration |
-| 🔧 | Jenkins CI/CD pipelines |
-| 🌱 | Always building and always learning |
-| 🤝 | Open to collaborations & open source contributions |
+![Mohamed Anas A — About Me Dashboard](about_me.svg)
+
+</div>
 
 ---
 

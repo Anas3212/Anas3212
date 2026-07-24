@@ -1,0 +1,418 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" role="img" aria-label="About Me Dashboard — Mohamed Anas A">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="glow-primary" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-secondary" cx="85%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-cyan" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.50"/>
+    </linearGradient>
+
+    <!-- Terminal Header Gradient -->
+    <linearGradient id="term-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Active Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.35"/>
+      <circle cx="0" cy="0" r="1" fill="#3B82F6" fill-opacity="0.3"/>
+    </pattern>
+
+    <!-- Drop Shadows & Blur Filters -->
+    <filter id="glass-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <filter id="neon-glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neon-glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip Paths for Terminal Line Typing -->
+    <clipPath id="clip-line1"><rect x="68" y="145" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.02;0.12;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line2"><rect x="68" y="180" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.14;0.24;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line3"><rect x="68" y="215" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.26;0.36;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line4"><rect x="68" y="250" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.38;0.48;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line5"><rect x="68" y="285" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.50;0.60;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line6"><rect x="68" y="320" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.62;0.72;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="clip-line7"><rect x="68" y="355" height="24" width="0"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.74;0.86;0.94;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <style>
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes float-card-1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes float-card-2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes float-card-3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes pulse-line {
+      0%, 100% { opacity: 0.3; stroke-dashoffset: 0; }
+      50% { opacity: 0.8; stroke-dashoffset: -30; }
+    }
+    @keyframes pulse-node-active {
+      0%, 100% { r: 16px; opacity: 0.9; }
+      50% { r: 20px; opacity: 0.5; }
+    }
+    @keyframes particle-drift {
+      0% { transform: translate(0, 0); opacity: 0.2; }
+      50% { opacity: 0.7; }
+      100% { transform: translate(30px, -40px); opacity: 0.2; }
+    }
+
+    .cursor { animation: cursor-blink 0.8s infinite; }
+    .card-1 { animation: float-card-1 5s ease-in-out infinite; }
+    .card-2 { animation: float-card-2 6s ease-in-out infinite 0.8s; }
+    .card-3 { animation: float-card-3 5.5s ease-in-out infinite 1.5s; }
+    .card-4 { animation: float-card-1 6.5s ease-in-out infinite 2.1s; }
+    .card-5 { animation: float-card-2 5.2s ease-in-out infinite 1.2s; }
+    .card-6 { animation: float-card-3 6.2s ease-in-out infinite 0.4s; }
+    .conn-line { animation: pulse-line 4s linear infinite; }
+    .breathing-node { animation: pulse-node-active 2.5s ease-in-out infinite; }
+    .particle { animation: particle-drift 12s ease-in-out infinite alternate; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cursor, .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .conn-line, .breathing-node, .particle {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Canvas Container -->
+  <rect width="1180" height="610" rx="20" fill="url(#bg-grad)"/>
+
+  <!-- Radial Background Lighting -->
+  <rect width="1180" height="610" rx="20" fill="url(#glow-primary)"/>
+  <rect width="1180" height="610" rx="20" fill="url(#glow-secondary)"/>
+  <rect width="1180" height="610" rx="20" fill="url(#glow-cyan)"/>
+
+  <!-- Circuit / Grid Overlay -->
+  <rect width="1180" height="610" rx="20" fill="url(#grid-pattern)"/>
+
+  <!-- Floating Background Particles -->
+  <g opacity="0.6">
+    <circle cx="120" cy="90" r="1.5" fill="#3B82F6" class="particle"/>
+    <circle cx="480" cy="50" r="2.0" fill="#06B6D4" class="particle" style="animation-delay: -3s;"/>
+    <circle cx="950" cy="110" r="1.5" fill="#8B5CF6" class="particle" style="animation-delay: -6s;"/>
+    <circle cx="1080" cy="420" r="2.5" fill="#3B82F6" class="particle" style="animation-delay: -2s;"/>
+    <circle cx="200" cy="450" r="1.8" fill="#22C55E" class="particle" style="animation-delay: -8s;"/>
+  </g>
+
+  <!-- Decorative Brackets & Accents -->
+  <text x="35" y="40" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" fill="#38BDF8" opacity="0.3">&lt;developer_dashboard&gt;</text>
+  <text x="1010" y="40" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" fill="#38BDF8" opacity="0.3">&lt;/developer_dashboard&gt;</text>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1178" height="608" rx="19" fill="none" stroke="url(#border-grad)" stroke-width="1.5"/>
+
+  <!-- ================================================================= -->
+  <!-- LEFT SIDE: ANIMATED TERMINAL WINDOW                              -->
+  <!-- ================================================================= -->
+  <g transform="translate(38, 42)" filter="url(#glass-shadow)">
+    <!-- Terminal Outer Frame -->
+    <rect width="524" height="424" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+
+    <!-- Terminal Header Bar -->
+    <rect width="524" height="38" rx="16" fill="url(#term-header)"/>
+    <rect y="22" width="524" height="16" fill="#1E293B"/> <!-- Square bottom corners of header -->
+
+    <!-- Window Control Buttons -->
+    <circle cx="20" cy="19" r="6" fill="#EF4444"/>
+    <circle cx="38" cy="19" r="6" fill="#F59E0B"/>
+    <circle cx="56" cy="19" r="6" fill="#10B981"/>
+
+    <!-- Terminal Title -->
+    <text x="262" y="23" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="middle">anas@github:~</text>
+    <path d="M 480 14 L 492 24 M 492 14 L 480 24" stroke="#475569" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Terminal Inner Body -->
+    <rect x="12" y="48" width="500" height="364" rx="10" fill="#030712" fill-opacity="0.95" stroke="#0F172A" stroke-width="1"/>
+
+    <!-- Line 1: whoami -->
+    <g clip-path="url(#clip-line1)">
+      <text x="28" y="78" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; whoami</text>
+      <text x="28" y="98" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#E2E8F0">Mohamed Anas A</text>
+    </g>
+
+    <!-- Line 2: role -->
+    <g clip-path="url(#clip-line2)">
+      <text x="28" y="128" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; role</text>
+      <text x="28" y="148" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#06B6D4">Full Stack Developer</text>
+    </g>
+
+    <!-- Line 3: education -->
+    <g clip-path="url(#clip-line3)">
+      <text x="28" y="178" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; education</text>
+      <text x="28" y="198" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#E2E8F0">B.E Computer Science &amp; Engineering</text>
+    </g>
+
+    <!-- Line 4: college -->
+    <g clip-path="url(#clip-line4)">
+      <text x="28" y="228" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; college</text>
+      <text x="28" y="248" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#94A3B8">Sri Eshwar College of Engineering</text>
+    </g>
+
+    <!-- Line 5: location -->
+    <g clip-path="url(#clip-line5)">
+      <text x="28" y="278" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; location</text>
+      <text x="28" y="298" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#E2E8F0">Coimbatore, Tamil Nadu, India</text>
+    </g>
+
+    <!-- Line 6: currently_learning -->
+    <g clip-path="url(#clip-line6)">
+      <text x="28" y="328" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; currently_learning</text>
+      <text x="28" y="348" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#8B5CF6">AWS • Kubernetes • DevOps</text>
+    </g>
+
+    <!-- Line 7: status + Blinking Cursor -->
+    <g clip-path="url(#clip-line7)">
+      <text x="28" y="378" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#3B82F6">&gt; status</text>
+      <text x="28" y="398" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500" fill="#22C55E">Building scalable full-stack apps...</text>
+    </g>
+
+    <!-- Continuous Blinking Terminal Cursor at current prompt line -->
+    <rect x="325" y="386" width="8" height="15" rx="1" fill="#22C55E" class="cursor"/>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- CONNECTING LINES WITH PULSING PARTICLES                           -->
+  <!-- ================================================================= -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 562 110 L 596 110" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4,4" class="conn-line"/>
+    <path d="M 562 250 L 596 250" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="4,4" class="conn-line"/>
+    <path d="M 562 390 L 596 390" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="4,4" class="conn-line"/>
+
+    <!-- Pulsing Data Packets moving across -->
+    <circle cx="578" cy="110" r="3" fill="#3B82F6" filter="url(#neon-glow-blue)">
+      <animate attributeName="cx" values="562;596;562" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="578" cy="250" r="3" fill="#06B6D4" filter="url(#neon-glow-blue)">
+      <animate attributeName="cx" values="562;596;562" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="578" cy="390" r="3" fill="#8B5CF6" filter="url(#neon-glow-blue)">
+      <animate attributeName="cx" values="562;596;562" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT SIDE: SIX FLOATING GLASS CARDS GRID                         -->
+  <!-- ================================================================= -->
+  <g transform="translate(596, 42)">
+
+    <!-- CARD 1: Full Stack Developer -->
+    <g class="card-1" filter="url(#glass-shadow)">
+      <rect x="0" y="0" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="0" y="0" width="260" height="124" rx="16" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="18" y="18" width="42" height="42" rx="10" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
+      <text x="39" y="45" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">👨‍💻</text>
+      <!-- Details -->
+      <text x="74" y="38" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">Full Stack Dev</text>
+      <text x="74" y="56" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Java • Spring • React</text>
+      <!-- Sub Badge -->
+      <rect x="18" y="78" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="32" cy="92" r="3.5" fill="#22C55E"/>
+      <text x="44" y="96" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">Architecture &amp; End-to-End</text>
+    </g>
+
+    <!-- CARD 2: AWS Cloud Learner -->
+    <g class="card-2" filter="url(#glass-shadow)">
+      <rect x="280" y="0" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="280" y="0" width="260" height="124" rx="16" fill="none" stroke="#06B6D4" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="298" y="18" width="42" height="42" rx="10" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
+      <text x="319" y="45" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">☁️</text>
+      <!-- Details -->
+      <text x="354" y="38" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">AWS Cloud Learner</text>
+      <text x="354" y="56" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">S3 • EC2 • Cloud Native</text>
+      <!-- Sub Badge -->
+      <rect x="298" y="78" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="312" cy="92" r="3.5" fill="#06B6D4"/>
+      <text x="324" y="96" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A5F3FC">Cloud Infrastructure</text>
+    </g>
+
+    <!-- CARD 3: Docker Enthusiast -->
+    <g class="card-3" filter="url(#glass-shadow)">
+      <rect x="0" y="150" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="0" y="150" width="260" height="124" rx="16" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="18" y="168" width="42" height="42" rx="10" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
+      <text x="39" y="195" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">🐳</text>
+      <!-- Details -->
+      <text x="74" y="188" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">Docker Enthusiast</text>
+      <text x="74" y="206" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Containers • Microservices</text>
+      <!-- Sub Badge -->
+      <rect x="18" y="228" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="32" cy="242" r="3.5" fill="#3B82F6"/>
+      <text x="44" y="246" font-family="'JetBrains Mono', monospace" font-size="10" fill="#93C5FD">Containerized Workflows</text>
+    </g>
+
+    <!-- CARD 4: Spring Boot Developer -->
+    <g class="card-4" filter="url(#glass-shadow)">
+      <rect x="280" y="150" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="280" y="150" width="260" height="124" rx="16" fill="none" stroke="#22C55E" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="298" y="168" width="42" height="42" rx="10" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.4"/>
+      <text x="319" y="195" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">⚙️</text>
+      <!-- Details -->
+      <text x="354" y="188" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">Spring Boot Dev</text>
+      <text x="354" y="206" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">REST API • Security • JPA</text>
+      <!-- Sub Badge -->
+      <rect x="298" y="228" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="312" cy="242" r="3.5" fill="#22C55E"/>
+      <text x="324" y="246" font-family="'JetBrains Mono', monospace" font-size="10" fill="#86EFAC">Robust Backend APIs</text>
+    </g>
+
+    <!-- CARD 5: React Frontend -->
+    <g class="card-5" filter="url(#glass-shadow)">
+      <rect x="0" y="300" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="0" y="300" width="260" height="124" rx="16" fill="none" stroke="#06B6D4" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="18" y="318" width="42" height="42" rx="10" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
+      <text x="39" y="345" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">⚛️</text>
+      <!-- Details -->
+      <text x="74" y="338" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">React Frontend</text>
+      <text x="74" y="356" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">UI/UX • State • Redux</text>
+      <!-- Sub Badge -->
+      <rect x="18" y="378" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="32" cy="392" r="3.5" fill="#06B6D4"/>
+      <text x="44" y="396" font-family="'JetBrains Mono', monospace" font-size="10" fill="#67E8F9">Interactive &amp; Modern SPAs</text>
+    </g>
+
+    <!-- CARD 6: Open Source Contributor -->
+    <g class="card-6" filter="url(#glass-shadow)">
+      <rect x="280" y="300" width="260" height="124" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="280" y="300" width="260" height="124" rx="16" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.3"/>
+      <!-- Icon Container -->
+      <rect x="298" y="318" width="42" height="42" rx="10" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-opacity="0.4"/>
+      <text x="319" y="345" font-family="'Inter', sans-serif" font-size="20" text-anchor="middle">🚀</text>
+      <!-- Details -->
+      <text x="354" y="338" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#E2E8F0">Open Source</text>
+      <text x="354" y="356" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Community • GitHub</text>
+      <!-- Sub Badge -->
+      <rect x="298" y="378" width="224" height="28" rx="6" fill="#0F172A" fill-opacity="0.8" stroke="#1E293B"/>
+      <circle cx="312" cy="392" r="3.5" fill="#8B5CF6"/>
+      <text x="324" y="396" font-family="'JetBrains Mono', monospace" font-size="10" fill="#C084FC">Continuous Collaboration</text>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- BOTTOM SECTION: ANIMATED ROADMAP DASHBOARD                        -->
+  <!-- ================================================================= -->
+  <g transform="translate(38, 486)" filter="url(#glass-shadow)">
+    <!-- Roadmap Container -->
+    <rect width="1104" height="90" rx="16" fill="url(#card-grad)" stroke="#1E293B" stroke-width="1.2"/>
+
+    <!-- Section Title Badge -->
+    <text x="24" y="26" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="1">TECHS &amp; DEPLOYMENT ROADMAP</text>
+
+    <!-- Connecting Track Line -->
+    <line x1="120" y1="56" x2="984" y2="56" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="120" y1="56" x2="768" y2="56" stroke="url(#accent-grad)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Glowing Traveling Pulse Packet -->
+    <circle cx="120" cy="56" r="6" fill="#06B6D4" filter="url(#neon-glow-blue)">
+      <animate attributeName="cx" values="120;336;552;768;984;120" keyTimes="0;0.25;0.5;0.75;0.9;1" dur="5s" repeatCount="indefinite" calcMode="linear"/>
+    </circle>
+
+    <!-- NODE 1: Java (Completed) -->
+    <g transform="translate(120, 56)">
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#3B82F6" stroke-width="3" filter="url(#neon-glow-blue)"/>
+      <circle cx="0" cy="0" r="5" fill="#3B82F6"/>
+      <text x="0" y="-24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Java</text>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22C55E" text-anchor="middle">✓ Core</text>
+    </g>
+
+    <!-- NODE 2: Spring Boot (Completed) -->
+    <g transform="translate(336, 56)">
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#3B82F6" stroke-width="3" filter="url(#neon-glow-blue)"/>
+      <circle cx="0" cy="0" r="5" fill="#3B82F6"/>
+      <text x="0" y="-24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Spring Boot</text>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22C55E" text-anchor="middle">✓ Backend</text>
+    </g>
+
+    <!-- NODE 3: Docker (Completed) -->
+    <g transform="translate(552, 56)">
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#06B6D4" stroke-width="3" filter="url(#neon-glow-blue)"/>
+      <circle cx="0" cy="0" r="5" fill="#06B6D4"/>
+      <text x="0" y="-24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Docker</text>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22C55E" text-anchor="middle">✓ Container</text>
+    </g>
+
+    <!-- NODE 4: AWS (Active Breathing) -->
+    <g transform="translate(768, 56)">
+      <circle cx="0" cy="0" r="18" fill="#8B5CF6" fill-opacity="0.25" class="breathing-node"/>
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#8B5CF6" stroke-width="3" filter="url(#neon-glow-blue)"/>
+      <circle cx="0" cy="0" r="6" fill="#8B5CF6"/>
+      <text x="0" y="-24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">AWS</text>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F59E0B" text-anchor="middle">⚡ Active</text>
+    </g>
+
+    <!-- NODE 5: Kubernetes (Upcoming) -->
+    <g transform="translate(984, 56)">
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+      <circle cx="0" cy="0" r="4" fill="#475569"/>
+      <text x="0" y="-24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">Kubernetes</text>
+      <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#64748B" text-anchor="middle">🎯 Next</text>
+    </g>
+
+  </g>
+
+</svg>
