@@ -135,20 +135,14 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     GITHUB STATS
+     GITHUB ANALYTICS
 ═══════════════════════════════════════════════════════════════════ -->
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anas3212&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=22D3EE&text_color=94A3B8&rank_icon=github" alt="GitHub Stats" height="180"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anas3212&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=7C3AED&text_color=94A3B8" alt="Top Languages" height="180"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Anas3212&theme=tokyonight&hide_border=true&background=0D1117&stroke=7C3AED&ring=22D3EE&fire=10B981&currStreakLabel=94A3B8&sideLabels=94A3B8&dates=64748B" alt="GitHub Streak" width="60%"/>
+![Mohamed Anas A — GitHub Analytics Dashboard](github_stats.svg)
 
 </div>
 
