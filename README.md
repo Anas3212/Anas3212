@@ -270,32 +270,14 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     QUOTE
-═══════════════════════════════════════════════════════════════════ -->
-
-## 💭 Dev Quote
-
-<div align="center">
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)](https://github.com/piyushsuthar/github-readme-quotes)
-
-</div>
-
----
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     VISITOR COUNTER + FOOTER
+     DEV QUOTE & PROFILE VIEWS DASHBOARD
 ═══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-### 👀 Profile Views
-
-[![Visitors](https://komarev.com/ghpvc/?username=Anas3212&label=Profile%20views&color=7C3AED&style=for-the-badge)](https://github.com/Anas3212)
+![Mohamed Anas A — Dev Quote & Profile Views Dashboard](quote_views.svg)
 
 <br/>
-
----
 
 <sub>
 
