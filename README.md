@@ -270,17 +270,39 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     DEV QUOTE & TELEMETRY
+     QUOTE
 ═══════════════════════════════════════════════════════════════════ -->
 
-## 💭 Dev Quote & Telemetry
+## 💭 Dev Quote
 
 <div align="center">
 
-![Mohamed Anas A — Developer Quote & Telemetry](quote_footer.svg)
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)](https://github.com/piyushsuthar/github-readme-quotes)
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     VISITOR COUNTER + FOOTER
+═══════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 👀 Profile Views
+
+[![Visitors](https://komarev.com/ghpvc/?username=Anas3212&label=Profile%20views&color=7C3AED&style=for-the-badge)](https://github.com/Anas3212)
 
 <br/>
 
-[![Visitors](https://komarev.com/ghpvc/?username=Anas3212&label=LIVE%20PROFILE%20VIEWS&color=7C3AED&style=for-the-badge)](https://github.com/Anas3212)
+---
+
+<sub>
+
+⭐ **[Star this repo](https://github.com/Anas3212)** if you found it inspiring · Built with 🖤 and lots of ☕
+
+*Crafted with precision by **Mohamed Anas A** — Last updated 2025*
+
+</sub>
 
 </div>
