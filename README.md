@@ -41,15 +41,9 @@
 
 <div align="center">
 
-# Hi 👋 I'm Mohamed Anas A
-
-### Full Stack Developer · Java Enthusiast · Cloud Learner
+![Mohamed Anas A — Developer Introduction](header_intro.svg)
 
 </div>
-
-I'm a passionate **Full Stack Developer** focused on building scalable, production-grade web applications using **Java**, **Spring Boot**, and **React**. I enjoy designing clean backend architectures, crafting smooth frontend experiences, and deploying cloud-native solutions with **AWS**, **Docker**, and modern DevOps practices.
-
-> *"Code is like poetry — clarity, structure, and elegance matter as much as functionality."*
 
 ---
 
