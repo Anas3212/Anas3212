@@ -1,0 +1,1333 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1180" height="610" viewBox="0 0 1180 610" role="img"
+  aria-labelledby="dk-title dk-desc">
+
+  <title id="dk-title">Mohamed Anas A — Full Stack Developer</title>
+  <desc id="dk-desc">Animated dark-theme GitHub profile banner for Mohamed Anas A — Full Stack Developer specializing in Java, Spring Boot, React, Docker, AWS and cloud-native systems.</desc>
+
+  <!--
+  ═══════════════════════════════════════════════════════════════════
+    DESIGN TOKENS (reference values for consistency)
+    radius-sm:8  radius-md:16  radius-lg:24  radius-xl:32
+    space-xs:8   space-sm:16   space-md:24   space-lg:48
+    glow-sm:blur(4)  glow-md:blur(10)  glow-lg:blur(24)
+    anim-fast:2s  anim-normal:5s  anim-slow:12s
+
+    NAMING CONVENTION
+    grad-*   linearGradient / radialGradient
+    filter-* filter element
+    mask-*   mask element
+    clip-*   clipPath element
+    pat-*    pattern element
+    sym-*    symbol element
+  ═══════════════════════════════════════════════════════════════════
+  -->
+
+  <defs>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         GRADIENTS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- Background canvas gradient -->
+    <linearGradient id="grad-canvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#020817"/>
+      <stop offset="50%"  stop-color="#030A18"/>
+      <stop offset="100%" stop-color="#050D1F"/>
+    </linearGradient>
+
+    <!-- Aurora A: purple glow (top-left) -->
+    <radialGradient id="grad-aurora-a" cx="22%" cy="28%" r="55%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.40"/>
+      <stop offset="60%"  stop-color="#5B21B6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#020817" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Aurora B: cyan glow (right-center) -->
+    <radialGradient id="grad-aurora-b" cx="78%" cy="65%" r="52%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#0EA5E9" stop-opacity="0.30"/>
+      <stop offset="55%"  stop-color="#0284C7" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#020817" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Aurora C: green teal (bottom-center) -->
+    <radialGradient id="grad-aurora-c" cx="52%" cy="88%" r="45%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#020817" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Central radial glow (layer 4) -->
+    <radialGradient id="grad-center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.10"/>
+      <stop offset="50%"  stop-color="#22D3EE" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#020817" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Primary accent: purple → cyan → green -->
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7C3AED"/>
+      <stop offset="48%"  stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Accent vertical -->
+    <linearGradient id="grad-accent-v" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#7C3AED"/>
+      <stop offset="50%"  stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Name gradient (lighter, more luminous) -->
+    <linearGradient id="grad-name" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#C4B5FD"/>
+      <stop offset="45%"  stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#6EE7B7"/>
+    </linearGradient>
+
+    <!-- Left panel glass background -->
+    <linearGradient id="grad-left-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0F172A" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#060D1A" stop-opacity="0.90"/>
+    </linearGradient>
+
+    <!-- Right panel glass background -->
+    <linearGradient id="grad-right-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0C1526" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#060D1A" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <!-- Panel border (shimmer gradient) -->
+    <linearGradient id="grad-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.60"/>
+      <stop offset="50%"  stop-color="#22D3EE" stop-opacity="0.40"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <!-- Terminal title bar -->
+    <linearGradient id="grad-titlebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#060D1A"/>
+      <stop offset="100%" stop-color="#0A1220"/>
+    </linearGradient>
+
+    <!-- Screen code area -->
+    <linearGradient id="grad-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#0A1628"/>
+      <stop offset="100%" stop-color="#060E1A"/>
+    </linearGradient>
+
+    <!-- Scanline sweep (screen + panel) -->
+    <linearGradient id="grad-scan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#22D3EE" stop-opacity="0.07"/>
+      <stop offset="50%"  stop-color="#7C3AED" stop-opacity="0.10"/>
+      <stop offset="55%"  stop-color="#22D3EE" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- DB cylinder gradient -->
+    <linearGradient id="grad-db" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1E3B5A"/>
+      <stop offset="100%" stop-color="#0E2038"/>
+    </linearGradient>
+
+    <!-- Docker cube faces -->
+    <linearGradient id="grad-docker-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="grad-docker-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0369A1" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.70"/>
+    </linearGradient>
+    <linearGradient id="grad-docker-right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#0284C7" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#075985" stop-opacity="0.80"/>
+    </linearGradient>
+
+    <!-- Cloud gradient -->
+    <linearGradient id="grad-cloud" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Browser window gradient -->
+    <linearGradient id="grad-browser" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Spring Boot badge gradient -->
+    <linearGradient id="grad-springboot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#16A34A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#15803D" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- GitHub node gradient -->
+    <radialGradient id="grad-github-node" cx="40%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#4F46E5" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.30"/>
+    </radialGradient>
+
+    <!-- Glass reflection (layer 5) -->
+    <linearGradient id="grad-glass-reflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="40%"  stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Skill pill gradient -->
+    <linearGradient id="grad-skill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7C3AED" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.10"/>
+    </linearGradient>
+
+    <!-- Floating card gradient -->
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0F172A" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#060D1A" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Laptop body gradient -->
+    <linearGradient id="grad-laptop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Connection line data packet gradient -->
+    <radialGradient id="grad-packet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         FILTERS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- Aurora blur (very large) -->
+    <filter id="filter-aurora" x="-50%" y="-50%" width="200%" height="200%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <!-- glow-sm: soft element glow -->
+    <filter id="filter-glow-sm" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- glow-md: medium glow -->
+    <filter id="filter-glow-md" x="-35%" y="-35%" width="170%" height="170%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- glow-lg: large ambient glow -->
+    <filter id="filter-glow-lg" x="-60%" y="-60%" width="220%" height="220%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="16" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Panel layered shadow -->
+    <filter id="filter-panel-shadow" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="4"  stdDeviation="8"  flood-color="#000000" flood-opacity="0.60"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="0"  stdDeviation="40" flood-color="#7C3AED" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Blur small (blur-sm for decorative elements) -->
+    <filter id="filter-blur-sm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <!-- Blur medium -->
+    <filter id="filter-blur-md" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <!-- Noise + overlay (layer 2) -->
+    <filter id="filter-noise" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grey"/>
+      <feComponentTransfer in="grey" result="dimmed">
+        <feFuncA type="linear" slope="0.045"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="dimmed" mode="screen"/>
+    </filter>
+
+    <!-- Node glow: cyan -->
+    <filter id="filter-node-cyan" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Node glow: purple -->
+    <filter id="filter-node-purple" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Node glow: green -->
+    <filter id="filter-node-green" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         PATTERNS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- Fine grid (layer 3) -->
+    <pattern id="pat-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.5"/>
+    </pattern>
+
+    <!-- Dot matrix -->
+    <pattern id="pat-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.75" fill="#334155" fill-opacity="0.55"/>
+    </pattern>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         CLIP PATHS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- Main banner clip (radius-xl = 32) -->
+    <clipPath id="clip-banner">
+      <rect x="0" y="0" width="1180" height="610" rx="32" ry="32"/>
+    </clipPath>
+
+    <!-- Left panel clip -->
+    <clipPath id="clip-left">
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"/>
+    </clipPath>
+
+    <!-- Right panel clip -->
+    <clipPath id="clip-right">
+      <rect x="508" y="24" width="648" height="562" rx="24" ry="24"/>
+    </clipPath>
+
+    <!-- Screen clip (laptop code editor) -->
+    <clipPath id="clip-screen">
+      <rect x="86" y="188" width="308" height="180" rx="4" ry="4"/>
+    </clipPath>
+
+    <!-- Terminal content area clip -->
+    <clipPath id="clip-terminal-body">
+      <rect x="524" y="88" width="616" height="486" rx="4" ry="4"/>
+    </clipPath>
+
+    <!-- TYPING ANIMATION CLIPS (clipPath-based char reveal) -->
+    <!-- Each clip reveals text with width animation over 30s cycle -->
+    <!-- Role 1: "Full Stack Developer" ≈ 178px -->
+    <clipPath id="clip-type-r1">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;178;178;0;0"
+          keyTimes="0;0.05;0.133;0.167;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <!-- Role 2: "Java Developer" ≈ 126px -->
+    <clipPath id="clip-type-r2">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;0;126;126;0;0"
+          keyTimes="0;0.167;0.217;0.300;0.333;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <!-- Role 3: "Spring Boot Developer" ≈ 192px -->
+    <clipPath id="clip-type-r3">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;0;192;192;0;0"
+          keyTimes="0;0.333;0.383;0.467;0.500;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <!-- Role 4: "React Developer" ≈ 138px -->
+    <clipPath id="clip-type-r4">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;0;138;138;0;0"
+          keyTimes="0;0.500;0.550;0.633;0.667;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <!-- Role 5: "AWS & DevOps Learner" ≈ 182px -->
+    <clipPath id="clip-type-r5">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;0;182;182;0;0"
+          keyTimes="0;0.667;0.717;0.800;0.833;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <!-- Role 6: "Open Source Enthusiast" ≈ 202px -->
+    <clipPath id="clip-type-r6">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width"
+          values="0;0;202;202;0"
+          keyTimes="0;0.833;0.883;0.967;1"
+          dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         MASKS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <mask id="mask-fade-bottom">
+      <linearGradient id="grad-mask-bottom" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="65%" stop-color="white"/>
+        <stop offset="100%" stop-color="black"/>
+      </linearGradient>
+      <rect width="1180" height="610" fill="url(#grad-mask-bottom)"/>
+    </mask>
+
+    <mask id="mask-vignette">
+      <radialGradient id="grad-mask-vignette" cx="50%" cy="50%" r="55%">
+        <stop offset="0%"   stop-color="white"/>
+        <stop offset="100%" stop-color="#888888"/>
+      </radialGradient>
+      <rect width="1180" height="610" fill="url(#grad-mask-vignette)"/>
+    </mask>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         SYMBOLS (reusable UI elements)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- sym-win-controls: macOS-style traffic lights -->
+    <symbol id="sym-win-controls" viewBox="0 0 56 14">
+      <circle cx="7"  cy="7" r="6" fill="#FF5F57"/>
+      <circle cx="28" cy="7" r="6" fill="#FFBD2E"/>
+      <circle cx="49" cy="7" r="6" fill="#28C840"/>
+    </symbol>
+
+    <!-- sym-github: GitHub logo -->
+    <symbol id="sym-github" viewBox="0 0 20 20">
+      <path d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0110 4.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10 20 4.477 15.523 0 10 0z"
+        fill="currentColor"/>
+    </symbol>
+
+    <!-- sym-linkedin: LinkedIn logo -->
+    <symbol id="sym-linkedin" viewBox="0 0 20 20">
+      <path d="M0 1.432C0 .641.656 0 1.465 0h17.07C19.344 0 20 .641 20 1.432v17.136C20 19.36 19.344 20 18.535 20H1.465C.656 20 0 19.36 0 18.568V1.432zm6.18 15.096V7.855H3.296v8.673H6.18zm-1.443-9.86c1.005 0 1.63-.666 1.63-1.499-.019-.85-.625-1.498-1.61-1.498-.986 0-1.63.648-1.63 1.498 0 .833.625 1.499 1.59 1.499h.02zm3.52 9.86h2.885V11.55c0-.259.019-.518.095-.703.208-.518.683-1.054 1.48-1.054 1.043 0 1.46.795 1.46 1.96v4.775h2.884v-5.118c0-2.666-1.422-3.905-3.317-3.905-1.554 0-2.237.866-2.617 1.456h.02v-1.253H8.256c.038.813 0 8.673 0 8.673z"
+        fill="currentColor"/>
+    </symbol>
+
+    <!-- sym-email icon -->
+    <symbol id="sym-email" viewBox="0 0 20 20">
+      <path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm14.5 1.311L10 10.174 3.5 5.311V16h13V5.311zM3.77 4h12.46L10 8.826 3.77 4z"
+        fill="currentColor"/>
+    </symbol>
+
+    <!-- sym-globe icon -->
+    <symbol id="sym-globe" viewBox="0 0 20 20">
+      <path d="M10 0a10 10 0 100 20A10 10 0 0010 0zm-1.5 2.2A8 8 0 002.42 8H5.5c.14-2.16.7-4.07 1.5-5.8zm3 0c.8 1.73 1.36 3.64 1.5 5.8h3.08A8 8 0 0011.5 2.2zM2.05 10h3.45v.1c0 1.7.28 3.3.75 4.7H3A8 8 0 012.05 10zm5.45 0h5c0 2.1-.48 4-.95 5.2h-3.1C8.0 13.9 7.5 12 7.5 10zm7 0h3.45A8 8 0 0117 14.8h-3.25c.47-1.4.75-3 .75-4.7V10zM3 16h2.5c.5 1.2 1.1 2.1 1.8 2.7A8.02 8.02 0 013 16zm4.5 0h5c-.5 1.4-1.25 2.4-2.5 2.4-1.25 0-2-.98-2.5-2.4zm7 0H17a8.02 8.02 0 01-4.3 2.7c.7-.6 1.3-1.5 1.8-2.7z"
+        fill="currentColor"/>
+    </symbol>
+
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       ROOT CLIP (rounded banner)
+  ═══════════════════════════════════════════════════════════════════ -->
+  <g clip-path="url(#clip-banner)">
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 0: CANVAS BASE
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <rect width="1180" height="610" fill="url(#grad-canvas)"/>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 1: AURORA GRADIENTS (drifting)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+    <!-- Aurora A: purple (top-left) — 22s drift -->
+    <ellipse cx="260" cy="175" rx="420" ry="310" fill="url(#grad-aurora-a)" filter="url(#filter-aurora)" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 90,-45; 30,70; -50,20; 0,0"
+        keyTimes="0;0.25;0.50;0.75;1"
+        dur="22s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+      <animate attributeName="opacity" values="0.9;1;0.75;0.95;0.9" dur="22s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Aurora B: cyan (right) — 28s drift (opposite phase) -->
+    <ellipse cx="940" cy="400" rx="390" ry="290" fill="url(#grad-aurora-b)" filter="url(#filter-aurora)" opacity="0.85">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; -70,35; 40,-60; 20,30; 0,0"
+        keyTimes="0;0.25;0.50;0.75;1"
+        dur="28s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+      <animate attributeName="opacity" values="0.85;0.65;1;0.80;0.85" dur="28s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Aurora C: green (bottom) — 35s drift -->
+    <ellipse cx="610" cy="540" rx="360" ry="240" fill="url(#grad-aurora-c)" filter="url(#filter-aurora)" opacity="0.80">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 50,30; -40,-20; 30,10; 0,0"
+        keyTimes="0;0.25;0.50;0.75;1"
+        dur="35s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+      <animate attributeName="opacity" values="0.80;1;0.60;0.85;0.80" dur="35s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 2: NOISE TEXTURE
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <rect width="1180" height="610" filter="url(#filter-noise)" opacity="0.8"/>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 3: GRID TEXTURE (slow drift)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <rect width="1220" height="650" fill="url(#pat-grid)" opacity="0.35">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 40,40; 0,0" dur="45s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect width="1180" height="610" fill="url(#pat-dots)" opacity="0.40"/>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 4: LARGE RADIAL GLOW (center bloom, breathe)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <ellipse cx="590" cy="305" rx="560" ry="340" fill="url(#grad-center-glow)">
+      <animate attributeName="rx" values="560;590;540;560" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="340;370;320;340" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.7;1" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 5: GLASS REFLECTIONS (diagonal streaks)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <!-- Primary diagonal reflection sweep -->
+    <rect x="-200" y="-40" width="180" height="700"
+      fill="url(#grad-glass-reflect)" opacity="0.6"
+      transform="rotate(-25 590 305)">
+      <animateTransform attributeName="transform" type="translate"
+        values="-700,0; 2000,0; -700,0" dur="12s" repeatCount="indefinite" calcMode="linear" additive="sum"/>
+    </rect>
+    <!-- Secondary thinner reflection -->
+    <rect x="-200" y="-40" width="80" height="700"
+      fill="url(#grad-glass-reflect)" opacity="0.35"
+      transform="rotate(-25 590 305)">
+      <animateTransform attributeName="transform" type="translate"
+        values="-700,0; 2000,0; -700,0" dur="12s" repeatCount="indefinite" calcMode="linear" begin="1.5s" additive="sum"/>
+    </rect>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 6: PARTICLES (40 floating dots)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <g id="layer-particles">
+      <!-- Purple particles -->
+      <circle cx="72"   cy="130" r="1.4" fill="#7C3AED"><animate attributeName="cy" values="130;105;130" dur="8.1s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.12;0.55" dur="8.1s"  repeatCount="indefinite"/></circle>
+      <circle cx="410"  cy="540" r="1.0" fill="#7C3AED"><animate attributeName="cy" values="540;518;540" dur="13.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.08;0.40" dur="13.3s" repeatCount="indefinite"/></circle>
+      <circle cx="815"  cy="88"  r="1.0" fill="#7C3AED"><animate attributeName="cy" values="88;65;88"   dur="10.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.50;0.10;0.50" dur="10.7s" repeatCount="indefinite"/></circle>
+      <circle cx="1135" cy="380" r="1.7" fill="#7C3AED"><animate attributeName="cy" values="380;356;380" dur="14.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;0.20;0.65" dur="14.9s" repeatCount="indefinite"/></circle>
+      <circle cx="285"  cy="400" r="1.7" fill="#7C3AED"><animate attributeName="cy" values="400;376;400" dur="17.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;0.22;0.65" dur="17.8s" repeatCount="indefinite"/></circle>
+      <circle cx="445"  cy="130" r="1.1" fill="#7C3AED"><animate attributeName="cy" values="130;108;130" dur="11.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.48;0.10;0.48" dur="11.2s" repeatCount="indefinite"/></circle>
+      <circle cx="55"   cy="485" r="1.4" fill="#7C3AED"><animate attributeName="cy" values="485;462;485" dur="14.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.15;0.55" dur="14.2s" repeatCount="indefinite"/></circle>
+      <!-- Cyan particles -->
+      <circle cx="182"  cy="455" r="1.0" fill="#22D3EE"><animate attributeName="cy" values="455;432;455" dur="11.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.10;0.45" dur="11.5s" repeatCount="indefinite"/></circle>
+      <circle cx="560"  cy="46"  r="1.8" fill="#22D3EE"><animate attributeName="cy" values="46;22;46"   dur="7.7s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.50;0.14;0.50" dur="7.7s"  repeatCount="indefinite"/></circle>
+      <circle cx="920"  cy="495" r="1.4" fill="#22D3EE"><animate attributeName="cy" values="495;472;495" dur="12.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.58;0.18;0.58" dur="12.4s" repeatCount="indefinite"/></circle>
+      <circle cx="147"  cy="322" r="1.1" fill="#22D3EE"><animate attributeName="cy" values="322;298;322" dur="9.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.48;0.12;0.48" dur="9.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="620"  cy="173" r="1.7" fill="#22D3EE"><animate attributeName="cy" values="173;149;173" dur="8.3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.62;0.22;0.62" dur="8.3s"  repeatCount="indefinite"/></circle>
+      <circle cx="740"  cy="510" r="1.0" fill="#22D3EE"><animate attributeName="cy" values="510;488;510" dur="16.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.08;0.40" dur="16.7s" repeatCount="indefinite"/></circle>
+      <circle cx="871"  cy="58"  r="1.4" fill="#22D3EE"><animate attributeName="cy" values="58;34;58"   dur="10.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.16;0.55" dur="10.6s" repeatCount="indefinite"/></circle>
+      <!-- Green particles -->
+      <circle cx="322"  cy="82"  r="1.4" fill="#10B981"><animate attributeName="cy" values="82;58;82"   dur="9.2s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;0.20;0.65" dur="9.2s"  repeatCount="indefinite"/></circle>
+      <circle cx="682"  cy="583" r="1.1" fill="#10B981"><animate attributeName="cy" values="583;560;583" dur="13.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.48;0.10;0.48" dur="13.8s" repeatCount="indefinite"/></circle>
+      <circle cx="990"  cy="365" r="1.1" fill="#10B981"><animate attributeName="cy" values="365;342;365" dur="12.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="12.8s" repeatCount="indefinite"/></circle>
+      <circle cx="160"  cy="60"  r="1.0" fill="#10B981"><animate attributeName="cy" values="60;37;60"   dur="7.3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.48;0.12;0.48" dur="7.3s"  repeatCount="indefinite"/></circle>
+      <circle cx="250"  cy="565" r="1.4" fill="#10B981"><animate attributeName="cy" values="565;543;565" dur="16.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.14;0.55" dur="16.2s" repeatCount="indefinite"/></circle>
+      <circle cx="600"  cy="558" r="1.0" fill="#10B981"><animate attributeName="cy" values="558;536;558" dur="16.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.08;0.40" dur="16.5s" repeatCount="indefinite"/></circle>
+      <!-- Mixed smaller particles (subtle depth) -->
+      <circle cx="100"  cy="282" r="0.9" fill="#C4B5FD"><animate attributeName="cy" values="282;260;282" dur="10.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="10.2s" repeatCount="indefinite"/></circle>
+      <circle cx="375"  cy="198" r="1.4" fill="#C4B5FD"><animate attributeName="cy" values="198;175;198" dur="11.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.16;0.55" dur="11.8s" repeatCount="indefinite"/></circle>
+      <circle cx="490"  cy="443" r="1.0" fill="#A5F3FC"><animate attributeName="cy" values="443;421;443" dur="13.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.42;0.10;0.42" dur="13.7s" repeatCount="indefinite"/></circle>
+      <circle cx="730"  cy="265" r="1.4" fill="#A5F3FC"><animate attributeName="cy" values="265;242;265" dur="9.5s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.16;0.55" dur="9.5s"  repeatCount="indefinite"/></circle>
+      <circle cx="855"  cy="432" r="1.0" fill="#6EE7B7"><animate attributeName="cy" values="432;410;432" dur="13.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.42;0.10;0.42" dur="13.1s" repeatCount="indefinite"/></circle>
+      <circle cx="1005" cy="82"  r="1.7" fill="#6EE7B7"><animate attributeName="cy" values="82;58;82"   dur="8.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;0.22;0.65" dur="8.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="503" r="1.1" fill="#6EE7B7"><animate attributeName="cy" values="503;480;503" dur="18.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.42;0.10;0.42" dur="18.9s" repeatCount="indefinite"/></circle>
+      <circle cx="38"   cy="388" r="1.0" fill="#7C3AED"><animate attributeName="cy" values="388;366;388" dur="11.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.08;0.40" dur="11.3s" repeatCount="indefinite"/></circle>
+      <circle cx="498"  cy="28"  r="1.7" fill="#22D3EE"><animate attributeName="cy" values="28;5;28"    dur="13.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.58;0.18;0.58" dur="13.0s" repeatCount="indefinite"/></circle>
+      <circle cx="1158" cy="152" r="1.1" fill="#7C3AED"><animate attributeName="cy" values="152;130;152" dur="21.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.42;0.10;0.42" dur="21.7s" repeatCount="indefinite"/></circle>
+      <circle cx="210"  cy="592" r="1.4" fill="#10B981"><animate attributeName="cy" values="592;570;592" dur="19.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.14;0.55" dur="19.4s" repeatCount="indefinite"/></circle>
+      <circle cx="340"  cy="484" r="0.9" fill="#22D3EE"><animate attributeName="cy" values="484;463;484" dur="11.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="11.1s" repeatCount="indefinite"/></circle>
+      <circle cx="472"  cy="292" r="1.4" fill="#C4B5FD"><animate attributeName="cy" values="292;269;292" dur="7.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.16;0.55" dur="7.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="583"  cy="372" r="0.9" fill="#6EE7B7"><animate attributeName="cy" values="372;350;372" dur="15.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="15.6s" repeatCount="indefinite"/></circle>
+      <circle cx="703"  cy="432" r="1.7" fill="#7C3AED"><animate attributeName="cy" values="432;408;432" dur="9.3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.65;0.22;0.65" dur="9.3s"  repeatCount="indefinite"/></circle>
+      <circle cx="832"  cy="204" r="1.1" fill="#22D3EE"><animate attributeName="cy" values="204;182;204" dur="12.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="12.2s" repeatCount="indefinite"/></circle>
+      <circle cx="964"  cy="554" r="0.9" fill="#10B981"><animate attributeName="cy" values="554;532;554" dur="20.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="20.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1074" cy="322" r="1.4" fill="#7C3AED"><animate attributeName="cy" values="322;298;322" dur="8.2s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.55;0.16;0.55" dur="8.2s"  repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 7: LEFT PANEL — DEVELOPER WORKFLOW ILLUSTRATION
+         Story: GitHub → Code Editor → Spring Boot → DB → Cloud
+                                  └→ Docker → Browser (Request)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <g id="layer-illustration" clip-path="url(#clip-left)">
+
+      <!-- Panel glass background -->
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"
+        fill="url(#grad-left-panel)" filter="url(#filter-panel-shadow)"/>
+
+      <!-- Panel inner highlight (top edge specular) -->
+      <rect x="44" y="25" width="408" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.06"/>
+
+      <!-- Panel border (animated shimmer) -->
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"
+        fill="none" stroke="url(#grad-border)" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.1s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Top inner glow strip -->
+      <ellipse cx="248" cy="26" rx="160" ry="7" fill="url(#grad-accent)" opacity="0.15" filter="url(#filter-blur-md)"/>
+
+      <!-- ── GITHUB NODE (root of workflow) ─────────────────── -->
+      <g id="illus-github-node">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 0,-5; 0,0" dur="6.8s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <!-- Outer ring (pulse) -->
+        <circle cx="248" cy="78" r="32" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4">
+          <animate attributeName="r" values="32;42;32" dur="3.2s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3.2s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Second pulse ring -->
+        <circle cx="248" cy="78" r="26" fill="none" stroke="#7C3AED" stroke-width="0.8" stroke-opacity="0.6">
+          <animate attributeName="r" values="26;36;26" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Hub background circle -->
+        <circle cx="248" cy="78" r="22" fill="url(#grad-github-node)" stroke="#7C3AED" stroke-width="1.5" stroke-opacity="0.7" filter="url(#filter-glow-sm)"/>
+        <!-- GitHub icon -->
+        <use href="#sym-github" x="237" y="67" width="22" height="22" fill="#C4B5FD"/>
+        <!-- Label -->
+        <text x="248" y="116" font-family="system-ui,-apple-system,sans-serif" font-size="9.5"
+          fill="#94A3B8" text-anchor="middle" font-weight="500">GitHub</text>
+      </g>
+
+      <!-- ── VERTICAL CONNECTOR: GitHub → Laptop ─────────────── -->
+      <line x1="248" y1="100" x2="248" y2="144" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <!-- Data packet: GitHub → Laptop -->
+      <circle cx="248" cy="115" r="2.5" fill="#7C3AED" opacity="0.9">
+        <animate attributeName="cy" values="100;144" dur="1.8s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- ── LAPTOP / CODE EDITOR (center of workflow) ─────── -->
+      <g id="illus-laptop">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 0,-6; 0,0" dur="9.1s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <!-- Laptop lid body -->
+        <rect x="88" y="148" width="320" height="208" rx="8" ry="8" fill="url(#grad-laptop)"/>
+        <rect x="88" y="148" width="320" height="208" rx="8" ry="8" fill="none" stroke="url(#grad-border)" stroke-width="1.2" stroke-opacity="0.5"/>
+
+        <!-- Screen area -->
+        <rect x="100" y="160" width="296" height="184" rx="4" ry="4" fill="url(#grad-screen)"/>
+
+        <!-- Code editor chrome (tab bar) -->
+        <rect x="100" y="160" width="296" height="20" rx="4" ry="4" fill="#0A1628"/>
+        <rect x="100" y="172" width="296" height="8" fill="#0A1628"/>
+
+        <!-- Editor tabs -->
+        <rect x="104" y="162" width="72" height="16" rx="2" fill="#0F172A" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.6"/>
+        <text x="118" y="173" font-family="'Courier New',monospace" font-size="7.5" fill="#C4B5FD">DevController.java</text>
+        <rect x="180" y="164" width="50" height="12" rx="2" fill="none"/>
+        <text x="186" y="173" font-family="'Courier New',monospace" font-size="7.5" fill="#475569">User.java</text>
+
+        <!-- Code content inside screen -->
+        <g clip-path="url(#clip-screen)">
+          <!-- Line gutter -->
+          <rect x="100" y="180" width="24" height="164" fill="#0A1020" fill-opacity="0.7"/>
+
+          <!-- Line numbers -->
+          <text x="116" y="198" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">1</text>
+          <text x="116" y="211" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">2</text>
+          <text x="116" y="224" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">3</text>
+          <text x="116" y="237" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">4</text>
+          <text x="116" y="250" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">5</text>
+          <text x="116" y="263" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">6</text>
+          <text x="116" y="276" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">7</text>
+          <text x="116" y="289" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">8</text>
+          <text x="116" y="302" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">9</text>
+          <text x="116" y="315" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">10</text>
+          <text x="116" y="328" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">11</text>
+          <text x="116" y="341" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">12</text>
+
+          <!-- Syntax highlighted Java Spring Boot code -->
+          <text x="126" y="198" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">@RestController</text>
+          <text x="126" y="211" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">@RequestMapping<tspan fill="#F8FAFC">("/api")</tspan></text>
+          <text x="126" y="224" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">public class </tspan><tspan fill="#FDE68A">DevController</tspan><tspan fill="#F8FAFC"> {</tspan>
+          </text>
+          <text x="134" y="237" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @Autowired</text>
+          <text x="134" y="250" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">  private </tspan><tspan fill="#86EFAC">UserRepo </tspan><tspan fill="#F8FAFC">repo;</tspan>
+          </text>
+          <text x="134" y="263" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @GetMapping</text>
+          <text x="134" y="276" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">  public </tspan><tspan fill="#86EFAC">List</tspan><tspan fill="#F8FAFC">&lt;</tspan><tspan fill="#FDE68A">User</tspan><tspan fill="#F8FAFC">&gt; getAll() {</tspan>
+          </text>
+          <text x="142" y="289" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">    return </tspan><tspan fill="#F8FAFC">repo.</tspan><tspan fill="#86EFAC">findAll</tspan><tspan fill="#F8FAFC">();</tspan>
+          </text>
+          <text x="134" y="302" font-family="'Courier New',monospace" font-size="8.5" fill="#F8FAFC">  }</text>
+          <text x="134" y="315" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @PostMapping</text>
+          <text x="134" y="328" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">  public </tspan><tspan fill="#FDE68A">User </tspan><tspan fill="#86EFAC">create</tspan><tspan fill="#F8FAFC">(@</tspan><tspan fill="#C084FC">Body</tspan><tspan fill="#FDE68A"> User </tspan><tspan fill="#F8FAFC">u) {</tspan>
+          </text>
+          <text x="142" y="341" font-family="'Courier New',monospace" font-size="8.5">
+            <tspan fill="#67E8F9">    return </tspan><tspan fill="#F8FAFC">repo.</tspan><tspan fill="#86EFAC">save</tspan><tspan fill="#F8FAFC">(u);</tspan>
+          </text>
+
+          <!-- Active line highlight -->
+          <rect x="100" y="281" width="296" height="10" fill="#7C3AED" opacity="0.10">
+            <animate attributeName="y" values="281;294;307;281" dur="5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
+          </rect>
+
+          <!-- Editor cursor -->
+          <rect x="228" y="282" width="5" height="8" fill="#22D3EE" opacity="0.9">
+            <animate attributeName="opacity" values="0.9;0;0.9" dur="0.9s" repeatCount="indefinite"/>
+          </rect>
+
+          <!-- Screen scanline sweep -->
+          <rect x="100" y="160" width="296" height="40" fill="url(#grad-scan)" opacity="0.6">
+            <animate attributeName="y" values="160;344;160" dur="3.8s" repeatCount="indefinite" calcMode="linear"/>
+          </rect>
+        </g>
+
+        <!-- Laptop keyboard base -->
+        <rect x="78" y="356" width="340" height="18" rx="4" ry="4" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+        <!-- Trackpad -->
+        <rect x="188" y="361" width="100" height="8" rx="3" fill="#0F172A" stroke="#2D3F55" stroke-width="0.8"/>
+
+        <!-- Screen edge shine (specular highlight) -->
+        <rect x="100" y="160" width="296" height="1.5" fill="#FFFFFF" fill-opacity="0.04"/>
+        <rect x="100" y="160" width="1.5" height="184" fill="#FFFFFF" fill-opacity="0.04"/>
+      </g>
+
+      <!-- ── CONNECTOR: Laptop → Spring Boot ──────────────────── -->
+      <line x1="374" y1="220" x2="430" y2="220" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.5" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="1.6s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <!-- packet -->
+      <circle cx="390" cy="220" r="2" fill="#10B981" opacity="0.9">
+        <animate attributeName="cx" values="374;430" dur="1.4s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="0.9;0.2" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- ── SPRING BOOT NODE ──────────────────────────────────── -->
+      <g id="illus-springboot">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 4,-8; 0,0" dur="7.4s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <rect x="382" y="144" width="80" height="56" rx="10" ry="10"
+          fill="url(#grad-springboot)" stroke="#16A34A" stroke-width="1.2" stroke-opacity="0.7"/>
+        <!-- Glow -->
+        <rect x="382" y="144" width="80" height="56" rx="10" ry="10"
+          fill="#10B981" opacity="0.04" filter="url(#filter-glow-md)"/>
+        <!-- Icon: spring leaf simplified -->
+        <circle cx="422" cy="162" r="8" fill="none" stroke="#22C55E" stroke-width="1.5" stroke-opacity="0.8"/>
+        <path d="M418 158 Q422 154 426 158 Q422 170 418 158" fill="#22C55E" opacity="0.7"/>
+        <text x="422" y="188" font-family="system-ui,sans-serif" font-size="8" fill="#6EE7B7" text-anchor="middle" font-weight="600">Spring Boot</text>
+        <!-- Pulse ring -->
+        <rect x="382" y="144" width="80" height="56" rx="10" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.3">
+          <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2.4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <!-- ── CONNECTOR: Spring Boot → Database ────────────────── -->
+      <line x1="422" y1="200" x2="375" y2="340" stroke="#22D3EE" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.2s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <!-- packet -->
+      <circle cx="400" cy="268" r="2" fill="#22D3EE" opacity="0.9">
+        <animateMotion path="M0,0 L-47,140" dur="2s" repeatCount="indefinite" calcMode="linear"/>
+      </circle>
+
+      <!-- ── DATABASE NODE ─────────────────────────────────────── -->
+      <g id="illus-database">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -4,8; 0,0" dur="10.8s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <!-- Cylinder body -->
+        <rect x="338" y="342" width="72" height="72" rx="6" fill="url(#grad-db)" stroke="#0EA5E9" stroke-width="1.2" stroke-opacity="0.6"/>
+        <!-- Top ellipse (lid) -->
+        <ellipse cx="374" cy="346" rx="36" ry="9" fill="#1E3B5A" stroke="#0EA5E9" stroke-width="1.2" stroke-opacity="0.8" filter="url(#filter-glow-sm)"/>
+        <!-- Middle separator -->
+        <ellipse cx="374" cy="370" rx="36" ry="9" fill="none" stroke="#0EA5E9" stroke-width="0.7" stroke-opacity="0.35"/>
+        <!-- Bottom lip -->
+        <ellipse cx="374" cy="414" rx="36" ry="9" fill="none" stroke="#0EA5E9" stroke-width="0.7" stroke-opacity="0.35"/>
+        <!-- Label -->
+        <text x="374" y="396" font-family="system-ui,sans-serif" font-size="8.5" fill="#67E8F9" text-anchor="middle" font-weight="600">MySQL</text>
+        <!-- Glow pulse on top -->
+        <ellipse cx="374" cy="346" rx="36" ry="9" fill="#0EA5E9" opacity="0.12">
+          <animate attributeName="opacity" values="0.12;0.30;0.12" dur="2.6s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+
+      <!-- ── CONNECTOR: Database → Cloud ──────────────────────── -->
+      <line x1="338" y1="384" x2="200" y2="384" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="1.9s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <!-- packet -->
+      <circle cx="270" cy="384" r="2" fill="#10B981" opacity="0.9">
+        <animate attributeName="cx" values="338;200" dur="1.7s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="0.9;0.2" dur="1.7s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- ── CLOUD / AWS NODE ──────────────────────────────────── -->
+      <g id="illus-cloud">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 6,10; 0,0" dur="13.2s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <!-- Cloud shape (overlapping circles) -->
+        <circle cx="168" cy="378" r="22" fill="url(#grad-cloud)" stroke="#334155" stroke-width="1"/>
+        <circle cx="188" cy="388" r="18" fill="url(#grad-cloud)" stroke="#334155" stroke-width="1"/>
+        <circle cx="148" cy="388" r="16" fill="url(#grad-cloud)" stroke="#334155" stroke-width="1"/>
+        <rect x="132" y="388" width="74" height="20" fill="url(#grad-cloud)"/>
+        <rect x="132" y="388" width="74" height="1" fill="#1E293B"/>
+        <!-- Bottom border clean -->
+        <rect x="134" y="406" width="72" height="2" rx="1" fill="#1E293B"/>
+        <!-- AWS label -->
+        <text x="168" y="403" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle" font-weight="600">AWS</text>
+        <!-- Cloud breathing -->
+        <circle cx="168" cy="378" r="22" fill="#0EA5E9" opacity="0.06">
+          <animate attributeName="opacity" values="0.06;0.16;0.06" dur="3.5s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="22;26;22" dur="3.5s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <!-- ── CONNECTOR: Laptop → Docker ──────────────────────── -->
+      <line x1="140" y1="356" x2="104" y2="430" stroke="#0EA5E9" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.4s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <!-- packet -->
+      <circle cx="122" cy="392" r="2" fill="#0EA5E9" opacity="0.9">
+        <animateMotion path="M36,-74 L0,0" dur="2.1s" repeatCount="indefinite" calcMode="linear"/>
+      </circle>
+
+      <!-- ── DOCKER NODE ────────────────────────────────────────── -->
+      <g id="illus-docker">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 8,-6; 0,0" dur="11.5s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <!-- Isometric cube faces -->
+        <!-- Top face -->
+        <polygon points="68,438 104,420 140,438 104,456"
+          fill="url(#grad-docker-top)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.8"/>
+        <!-- Left face -->
+        <polygon points="68,438 68,462 104,480 104,456"
+          fill="url(#grad-docker-left)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.6"/>
+        <!-- Right face -->
+        <polygon points="104,456 140,438 140,462 104,480"
+          fill="url(#grad-docker-right)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.6"/>
+
+        <!-- Whale detail boxes on top face (very small, isometric) -->
+        <rect x="95"  y="432" width="7" height="5" rx="1" fill="#38BDF8" opacity="0.7" transform="rotate(-28 98 434)"/>
+        <rect x="107" y="426" width="7" height="5" rx="1" fill="#38BDF8" opacity="0.7" transform="rotate(-28 110 428)"/>
+
+        <!-- Label below cube -->
+        <text x="104" y="493" font-family="system-ui,sans-serif" font-size="9" fill="#7DD3FC" text-anchor="middle" font-weight="600">Docker</text>
+
+        <!-- Glow under cube -->
+        <ellipse cx="104" cy="480" rx="28" ry="6" fill="#0EA5E9" opacity="0.15" filter="url(#filter-blur-sm)">
+          <animate attributeName="opacity" values="0.15;0.30;0.15" dur="2.8s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+
+      <!-- ── CONNECTOR: Docker → Browser ──────────────────────── -->
+      <line x1="140" y1="468" x2="200" y2="510" stroke="#C084FC" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.6s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+
+      <!-- ── BROWSER NODE (final user endpoint) ───────────────── -->
+      <g id="illus-browser">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 0,7; 0,0" dur="8.7s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <rect x="188" y="500" width="122" height="72" rx="8" ry="8"
+          fill="url(#grad-browser)" stroke="#334155" stroke-width="1.2"/>
+        <!-- Browser chrome bar -->
+        <rect x="188" y="500" width="122" height="18" rx="8" ry="8" fill="#263347"/>
+        <rect x="188" y="510" width="122" height="8" fill="#263347"/>
+        <!-- Browser dots (mini traffic lights) -->
+        <circle cx="198" cy="509" r="3" fill="#FF5F57" opacity="0.8"/>
+        <circle cx="207" cy="509" r="3" fill="#FFBD2E" opacity="0.8"/>
+        <circle cx="216" cy="509" r="3" fill="#28C840" opacity="0.8"/>
+        <!-- URL bar -->
+        <rect x="222" y="504" width="82" height="10" rx="5" fill="#0F172A" opacity="0.6"/>
+        <text x="225" y="512" font-family="'Courier New',monospace" font-size="6" fill="#64748B">localhost:3000</text>
+        <!-- Browser content lines -->
+        <rect x="196" y="526" width="96" height="5" rx="2" fill="#334155" opacity="0.8"/>
+        <rect x="196" y="534" width="72" height="4" rx="2" fill="#1E293B" opacity="0.7"/>
+        <rect x="196" y="541" width="84" height="4" rx="2" fill="#1E293B" opacity="0.6"/>
+        <!-- Mini bar chart (app content) -->
+        <rect x="196" y="551" width="8"  height="14" rx="1" fill="#7C3AED" opacity="0.7"/>
+        <rect x="207" y="545" width="8"  height="20" rx="1" fill="#22D3EE" opacity="0.7"/>
+        <rect x="218" y="548" width="8"  height="17" rx="1" fill="#10B981" opacity="0.7"/>
+        <rect x="229" y="543" width="8"  height="22" rx="1" fill="#7C3AED" opacity="0.6"/>
+        <!-- Label -->
+        <text x="249" y="555" font-family="system-ui,sans-serif" font-size="8" fill="#64748B" text-anchor="middle">Browser</text>
+        <!-- Glow -->
+        <rect x="188" y="500" width="122" height="72" rx="8" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.25">
+          <animate attributeName="stroke-opacity" values="0.25;0.60;0.25" dur="3.3s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <!-- ── GIT BRANCH MINI-VIZ (bottom-right of left panel) ── -->
+      <g id="illus-git">
+        <!-- Main branch line -->
+        <line x1="345" y1="470" x2="345" y2="558" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.55"/>
+        <!-- Feature branch -->
+        <path d="M345,496 Q368,496 368,512 L368,540" fill="none" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.5" stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.3s" repeatCount="indefinite"/>
+        </path>
+        <!-- Commit circles on main -->
+        <circle cx="345" cy="476" r="4.5" fill="#10B981" stroke="#0F172A" stroke-width="1.5" filter="url(#filter-glow-sm)"/>
+        <circle cx="345" cy="500" r="3.5" fill="#10B981" stroke="#0F172A" stroke-width="1.2"/>
+        <circle cx="345" cy="524" r="4.5" fill="#7C3AED" stroke="#0F172A" stroke-width="1.5" filter="url(#filter-glow-sm)">
+          <animate attributeName="r" values="4.5;6.5;4.5" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="368" cy="524" r="3.5" fill="#7C3AED" stroke="#0F172A" stroke-width="1.2"/>
+        <circle cx="368" cy="540" r="3.5" fill="#22D3EE" stroke="#0F172A" stroke-width="1.2"/>
+        <circle cx="345" cy="548" r="4.5" fill="#22D3EE" stroke="#0F172A" stroke-width="1.5" filter="url(#filter-node-cyan)"/>
+        <!-- Labels -->
+        <text x="354" y="480" font-family="'Courier New',monospace" font-size="7" fill="#4ADE80">main</text>
+        <text x="375" y="528" font-family="'Courier New',monospace" font-size="7" fill="#C4B5FD">feat</text>
+        <text x="354" y="552" font-family="'Courier New',monospace" font-size="7" fill="#67E8F9">HEAD</text>
+      </g>
+
+      <!-- Panel reflection sweep (internal glass effect) -->
+      <rect x="24" y="24" width="448" height="562" rx="24" fill="none">
+        <animate attributeName="opacity" values="0;0.08;0;0.05;0" dur="7s" repeatCount="indefinite" begin="1.2s"/>
+      </rect>
+      <rect x="24" y="-580" width="448" height="562" fill="url(#grad-glass-reflect)" rx="24">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,1172; 0,0" dur="7s" repeatCount="indefinite" begin="1.2s" calcMode="linear"/>
+      </rect>
+
+    </g><!-- /layer-illustration -->
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 8: RIGHT PANEL — GLASS TERMINAL
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+    <g id="layer-terminal" clip-path="url(#clip-right)">
+
+      <!-- Terminal glass background -->
+      <rect x="508" y="24" width="648" height="562" rx="24" ry="24"
+        fill="url(#grad-right-panel)" filter="url(#filter-panel-shadow)"/>
+
+      <!-- Inner highlight (specular top edge) -->
+      <rect x="528" y="25" width="608" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.055"/>
+      <rect x="509" y="44" width="2" height="522" rx="1" fill="#FFFFFF" fill-opacity="0.03"/>
+
+      <!-- Glass inner glow (bottom inner) -->
+      <rect x="508" y="484" width="648" height="102" rx="0" fill="#7C3AED" opacity="0.025"/>
+      <rect x="508" y="484" width="648" height="102" rx="0" fill="#22D3EE" opacity="0.015"/>
+
+      <!-- Border with animated shimmer -->
+      <rect x="508" y="24" width="648" height="562" rx="24" ry="24"
+        fill="none" stroke="url(#grad-border)" stroke-width="1.4">
+        <animate attributeName="stroke-opacity" values="0.38;0.80;0.38" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Top inner glow strip -->
+      <ellipse cx="832" cy="26" rx="240" ry="8" fill="url(#grad-accent)" opacity="0.18" filter="url(#filter-blur-md)"/>
+
+      <!-- ── TITLE BAR ──────────────────────────────────────────── -->
+      <rect x="508" y="24" width="648" height="56" rx="24" ry="24" fill="url(#grad-titlebar)" fill-opacity="0.7"/>
+      <rect x="508" y="56" width="648" height="24" fill="url(#grad-titlebar)" fill-opacity="0.7"/>
+
+      <!-- Window controls (using symbol) -->
+      <use href="#sym-win-controls" x="532" y="43" width="56" height="14"/>
+      <!-- Animated glow on dots -->
+      <circle cx="539" cy="50" r="7" fill="none" stroke="#FF5F57" stroke-width="0.5">
+        <animate attributeName="opacity" values="0;0.5;0" dur="5s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+
+      <!-- Terminal title text -->
+      <text x="832" y="56" font-family="'Courier New',monospace" font-size="12" fill="#4B5563" text-anchor="middle">
+        mohamed@github:~ — zsh
+      </text>
+
+      <!-- Divider under title bar -->
+      <line x1="508" y1="80" x2="1156" y2="80" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- ── TERMINAL CONTENT ─────────────────────────────────── -->
+      <g clip-path="url(#clip-terminal-body)">
+
+        <!-- ─ BOOT SEQUENCE (sequential staggered reveal) ─ -->
+
+        <!-- Prompt line -->
+        <text x="530" y="108" font-family="'Courier New',monospace" font-size="11.5" fill="#10B981" opacity="0">
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.04;0.06;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#22D3EE">mohamed</tspan><tspan fill="#F8FAFC">@</tspan><tspan fill="#10B981">github</tspan><tspan fill="#F8FAFC">:~$</tspan>
+          <tspan fill="#94A3B8" font-size="11"> boot --profile</tspan>
+        </text>
+
+        <!-- Boot line 1 -->
+        <text x="530" y="128" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;1;1" keyTimes="0;0.06;0.09;0.12;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#7C3AED">▶</tspan><tspan fill="#64748B">  Initializing profile</tspan><tspan fill="#7C3AED">...</tspan>
+        </text>
+        <!-- Check line 1 -->
+        <text x="530" y="145" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.09;0.12;0.15;0.18;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#6EE7B7">  Initializing profile</tspan>
+        </text>
+
+        <!-- Boot line 2 -->
+        <text x="530" y="162" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;1;1" keyTimes="0;0.12;0.15;0.18;0.21;0.24;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#22D3EE">▶</tspan><tspan fill="#64748B">  Loading repositories</tspan><tspan fill="#22D3EE">...</tspan>
+        </text>
+        <text x="530" y="179" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" keyTimes="0;0.15;0.18;0.21;0.24;0.27;0.30;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#6EE7B7">  Loading repositories</tspan>
+        </text>
+
+        <!-- Boot line 3 -->
+        <text x="530" y="196" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1" keyTimes="0;0.18;0.21;0.24;0.27;0.30;0.33;0.36;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#7C3AED">▶</tspan><tspan fill="#64748B">  Connecting GitHub</tspan><tspan fill="#7C3AED">...</tspan>
+        </text>
+        <text x="530" y="213" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.21;0.24;0.27;0.30;0.33;0.36;0.39;0.42;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#6EE7B7">  Connecting GitHub</tspan>
+        </text>
+
+        <!-- Boot line 4 -->
+        <text x="530" y="230" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.24;0.27;0.30;0.33;0.36;0.39;0.42;0.45;0.48;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#22D3EE">▶</tspan><tspan fill="#64748B">  Loading AWS credentials</tspan><tspan fill="#22D3EE">...</tspan>
+        </text>
+        <text x="530" y="247" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.27;0.30;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#6EE7B7">  Loading AWS credentials</tspan>
+        </text>
+
+        <!-- Boot line 5 -->
+        <text x="530" y="264" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.30;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">▶</tspan><tspan fill="#64748B">  Initializing Java runtime</tspan><tspan fill="#10B981">...</tspan>
+        </text>
+        <text x="530" y="281" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#6EE7B7">  Initializing Java runtime</tspan>
+        </text>
+
+        <!-- Boot line 6: Rendering portfolio -->
+        <text x="530" y="298" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#C084FC">▶</tspan><tspan fill="#64748B">  Rendering portfolio</tspan><tspan fill="#C084FC">...</tspan>
+        </text>
+        <text x="530" y="315" font-family="'Courier New',monospace" font-size="11.5" font-weight="700" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#10B981">✓</tspan><tspan fill="#4ADE80">  Ready.</tspan>
+        </text>
+
+        <!-- Separator line -->
+        <line x1="530" y1="328" x2="1138" y2="328" stroke="#1E293B" stroke-width="1" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;1" dur="28s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Hi greeting (fades in) -->
+        <text x="530" y="356" font-family="system-ui,-apple-system,sans-serif" font-size="19" fill="#94A3B8" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;1" dur="28s" repeatCount="indefinite"/>
+          Hi 👋 I'm
+        </text>
+
+        <!-- NAME (large, gradient, reveal with expanding underline) -->
+        <text x="530" y="400" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="700"
+          fill="url(#grad-name)" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;1" dur="28s" repeatCount="indefinite"/>
+          Mohamed Anas A
+        </text>
+        <!-- Name underline (expands left-to-right) -->
+        <rect x="530" y="408" width="0" height="2.5" rx="1.25" fill="url(#grad-accent)">
+          <animate attributeName="width"
+            values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;360;360"
+            keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.95;1"
+            dur="28s" repeatCount="indefinite" calcMode="spline"
+            keySplines="1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;1 1 1 1;0.25 0.1 0.25 1;1 1 1 1"/>
+        </rect>
+
+        <!-- TYPING ANIMATION SECTION -->
+        <!-- Prompt for role -->
+        <text x="530" y="436" font-family="'Courier New',monospace" font-size="11.5" fill="#374151" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;1" dur="28s" repeatCount="indefinite"/>
+          $ whoami --role
+        </text>
+
+        <!-- Role texts (revealed via clipPath animation) -->
+        <!-- Role 1: Full Stack Developer -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#22D3EE" clip-path="url(#clip-type-r1)">Full Stack Developer</text>
+
+        <!-- Role 2: Java Developer -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#C084FC" clip-path="url(#clip-type-r2)">Java Developer</text>
+
+        <!-- Role 3: Spring Boot Developer -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#6EE7B7" clip-path="url(#clip-type-r3)">Spring Boot Developer</text>
+
+        <!-- Role 4: React Developer -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#67E8F9" clip-path="url(#clip-type-r4)">React Developer</text>
+
+        <!-- Role 5: AWS and DevOps Learner -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#FDE68A" clip-path="url(#clip-type-r5)">AWS &amp; DevOps Learner</text>
+
+        <!-- Role 6: Open Source Enthusiast -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600"
+          fill="#F9A8D4" clip-path="url(#clip-type-r6)">Open Source Enthusiast</text>
+
+        <!-- Typing cursor (blinking, always visible in role area) -->
+        <rect x="530" y="444" width="2.2" height="17" rx="1.1" fill="#22D3EE">
+          <animate attributeName="opacity" values="1;0;1" dur="0.85s" repeatCount="indefinite"/>
+          <!-- Cursor tracks approximate text end position through roles -->
+          <animate attributeName="x"
+            values="530;710;710;530;530;662;662;530;530;724;724;530;530;670;670;530;530;714;714;530;530;734;734;530"
+            keyTimes="0;0.05;0.133;0.167;0.167;0.217;0.300;0.333;0.333;0.383;0.467;0.500;0.500;0.550;0.633;0.667;0.667;0.717;0.800;0.833;0.833;0.883;0.967;1"
+            dur="30s" repeatCount="indefinite" calcMode="linear"/>
+        </rect>
+
+        <!-- ── PROFILE DETAILS ──────────────────────────────── -->
+        <!-- Separator -->
+        <line x1="530" y1="475" x2="1138" y2="475" stroke="#1E293B" stroke-width="1" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;1" dur="28s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Details row 1 -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;1" dur="28s" repeatCount="indefinite"/>
+          <text x="530" y="496" font-family="system-ui,sans-serif" font-size="11.5" fill="#94A3B8">
+            <tspan>📍</tspan><tspan fill="#CBD5E1">  Coimbatore, Tamil Nadu, India</tspan>
+          </text>
+          <text x="810" y="496" font-family="system-ui,sans-serif" font-size="11.5" fill="#94A3B8">
+            🎓<tspan fill="#CBD5E1">  B.E Computer Science &amp; Engineering</tspan>
+          </text>
+        </g>
+
+        <!-- Details row 2 -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;1" dur="28s" repeatCount="indefinite"/>
+          <text x="530" y="514" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">
+            🏫<tspan fill="#64748B">  Sri Eshwar College of Engineering</tspan>
+          </text>
+          <text x="810" y="514" font-family="system-ui,sans-serif" font-size="11" fill="#94A3B8">
+            🚀<tspan fill="#64748B">  Building scalable Full Stack Applications</tspan>
+          </text>
+        </g>
+
+        <!-- ── SKILL PILLS (2 rows, staggered float) ─────────── -->
+        <!-- Row 1 -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+
+          <!-- Java -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.1s" repeatCount="indefinite"/>
+            <rect x="530" y="527" width="46" height="22" rx="11" fill="url(#grad-skill)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.7"/>
+            <text x="553" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#C4B5FD" text-anchor="middle" font-weight="500">Java</text>
+          </g>
+          <!-- Spring Boot -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.7s" repeatCount="indefinite"/>
+            <rect x="584" y="527" width="82" height="22" rx="11" fill="url(#grad-skill)" stroke="#10B981" stroke-width="1" stroke-opacity="0.7"/>
+            <text x="625" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#6EE7B7" text-anchor="middle" font-weight="500">Spring Boot</text>
+          </g>
+          <!-- React -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.9s" repeatCount="indefinite"/>
+            <rect x="674" y="527" width="52" height="22" rx="11" fill="url(#grad-skill)" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.7"/>
+            <text x="700" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#67E8F9" text-anchor="middle" font-weight="500">React</text>
+          </g>
+          <!-- Docker -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.4s" repeatCount="indefinite"/>
+            <rect x="734" y="527" width="58" height="22" rx="11" fill="url(#grad-skill)" stroke="#0EA5E9" stroke-width="1" stroke-opacity="0.7"/>
+            <text x="763" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#7DD3FC" text-anchor="middle" font-weight="500">Docker</text>
+          </g>
+          <!-- AWS -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.7s" repeatCount="indefinite"/>
+            <rect x="800" y="527" width="44" height="22" rx="11" fill="url(#grad-skill)" stroke="#FBBF24" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="822" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#FDE68A" text-anchor="middle" font-weight="500">AWS</text>
+          </g>
+          <!-- JavaScript -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="4.1s" repeatCount="indefinite"/>
+            <rect x="852" y="527" width="78" height="22" rx="11" fill="url(#grad-skill)" stroke="#FBBF24" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="891" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#FDE68A" text-anchor="middle" font-weight="500">JavaScript</text>
+          </g>
+        </g>
+
+        <!-- Row 2 -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+
+          <!-- Git -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.8s" repeatCount="indefinite"/>
+            <rect x="530" y="555" width="42" height="22" rx="11" fill="url(#grad-skill)" stroke="#F87171" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="551" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#FCA5A5" text-anchor="middle" font-weight="500">Git</text>
+          </g>
+          <!-- MySQL -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.2s" repeatCount="indefinite"/>
+            <rect x="580" y="555" width="56" height="22" rx="11" fill="url(#grad-skill)" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="608" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#67E8F9" text-anchor="middle" font-weight="500">MySQL</text>
+          </g>
+          <!-- Linux -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="4.5s" repeatCount="indefinite"/>
+            <rect x="644" y="555" width="50" height="22" rx="11" fill="url(#grad-skill)" stroke="#10B981" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="669" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#6EE7B7" text-anchor="middle" font-weight="500">Linux</text>
+          </g>
+          <!-- Jenkins -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.6s" repeatCount="indefinite"/>
+            <rect x="702" y="555" width="62" height="22" rx="11" fill="url(#grad-skill)" stroke="#F87171" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="733" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#FCA5A5" text-anchor="middle" font-weight="500">Jenkins</text>
+          </g>
+          <!-- REST API -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.5s" repeatCount="indefinite"/>
+            <rect x="772" y="555" width="68" height="22" rx="11" fill="url(#grad-skill)" stroke="#C084FC" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="806" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#C4B5FD" text-anchor="middle" font-weight="500">REST API</text>
+          </g>
+          <!-- Kubernetes -->
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="5.2s" repeatCount="indefinite"/>
+            <rect x="848" y="555" width="76" height="22" rx="11" fill="url(#grad-skill)" stroke="#0EA5E9" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="886" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#7DD3FC" text-anchor="middle" font-weight="500">Kubernetes</text>
+          </g>
+        </g>
+
+        <!-- ── SOCIAL LINKS ──────────────────────────────────── -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+
+          <!-- GitHub -->
+          <rect x="940" y="527" width="90" height="28" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+          <use href="#sym-github" x="950" y="534" width="14" height="14" fill="#94A3B8"/>
+          <text x="971" y="545" font-family="system-ui,sans-serif" font-size="10" fill="#94A3B8" font-weight="500">GitHub</text>
+
+          <!-- LinkedIn -->
+          <rect x="940" y="561" width="98" height="28" rx="8" fill="#0F172A" fill-opacity="0.8" stroke="#0EA5E9" stroke-width="1" stroke-opacity="0.5"/>
+          <use href="#sym-linkedin" x="950" y="568" width="14" height="14" fill="#0EA5E9"/>
+          <text x="971" y="579" font-family="system-ui,sans-serif" font-size="10" fill="#7DD3FC" font-weight="500">LinkedIn</text>
+        </g>
+
+      </g><!-- /clip-terminal-body -->
+
+      <!-- Panel internal glass reflection sweep -->
+      <rect x="508" y="-580" width="648" height="562" fill="url(#grad-glass-reflect)" rx="24">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,1172; 0,0" dur="8s" repeatCount="indefinite" begin="2.4s" calcMode="linear"/>
+      </rect>
+
+    </g><!-- /layer-terminal -->
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 9: FLOATING DEPTH CARDS
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+    <!-- Card A: Backend stack (top-left floating) -->
+    <g id="float-card-a">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 5,-9; 0,0" dur="7.3s" repeatCount="indefinite"
+        calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+      <rect x="36" y="36" width="102" height="64" rx="12" fill="url(#grad-card)" stroke="#1E293B" stroke-width="1" filter="url(#filter-blur-sm)"/>
+      <rect x="36" y="36" width="102" height="64" rx="12" fill="none" stroke="url(#grad-accent)" stroke-width="0.8" stroke-opacity="0.35"/>
+      <!-- Inner highlight -->
+      <rect x="38" y="37" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.05"/>
+      <!-- Card content -->
+      <text x="87" y="58" font-family="system-ui,sans-serif" font-size="9.5" fill="#6EE7B7" text-anchor="middle" font-weight="600">Backend</text>
+      <text x="87" y="72" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">Java · Spring Boot</text>
+      <text x="87" y="84" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">REST API · MySQL</text>
+      <!-- Accent dot -->
+      <circle cx="49" cy="49" r="3" fill="#10B981" filter="url(#filter-glow-sm)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Card B: DevOps stack (bottom-left floating) -->
+    <g id="float-card-b">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; -6,8; 0,0" dur="9.8s" repeatCount="indefinite"
+        calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+      <rect x="36" y="520" width="102" height="62" rx="12" fill="url(#grad-card)" stroke="#1E293B" stroke-width="1" filter="url(#filter-blur-sm)"/>
+      <rect x="36" y="520" width="102" height="62" rx="12" fill="none" stroke="url(#grad-accent)" stroke-width="0.8" stroke-opacity="0.30"/>
+      <rect x="38" y="521" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.05"/>
+      <text x="87" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#7DD3FC" text-anchor="middle" font-weight="600">DevOps</text>
+      <text x="87" y="556" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">Docker · Jenkins</text>
+      <text x="87" y="570" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">AWS · Linux</text>
+      <circle cx="49" cy="533" r="3" fill="#0EA5E9" filter="url(#filter-glow-sm)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="3.1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Card C: Frontend (mid-left, more subtle) -->
+    <g id="float-card-c">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 7,-5; 0,0" dur="11.5s" repeatCount="indefinite"
+        calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+      <rect x="36" y="282" width="102" height="60" rx="12" fill="url(#grad-card)" stroke="#1E293B" stroke-width="1" filter="url(#filter-blur-sm)" opacity="0.85"/>
+      <rect x="36" y="282" width="102" height="60" rx="12" fill="none" stroke="url(#grad-accent)" stroke-width="0.8" stroke-opacity="0.28"/>
+      <rect x="38" y="283" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.05"/>
+      <text x="87" y="303" font-family="system-ui,sans-serif" font-size="9.5" fill="#67E8F9" text-anchor="middle" font-weight="600">Frontend</text>
+      <text x="87" y="317" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">React · JavaScript</text>
+      <text x="87" y="331" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">HTML5 · CSS3</text>
+      <circle cx="49" cy="295" r="3" fill="#22D3EE" filter="url(#filter-glow-sm)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 10: BORDER HIGHLIGHT
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+    <!-- Outer banner border (gradient, breathing) -->
+    <rect x="1" y="1" width="1178" height="608" rx="31" ry="31"
+      fill="none" stroke="url(#grad-accent)" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.25;0.65;0.25" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Inner border (subtle, fixed) -->
+    <rect x="3" y="3" width="1174" height="604" rx="30" ry="30"
+      fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.6"/>
+
+    <!-- Corner ambient glow spots -->
+    <circle cx="32"  cy="32"  r="30" fill="#7C3AED" opacity="0.07" filter="url(#filter-blur-md)"/>
+    <circle cx="1148" cy="32" r="30" fill="#22D3EE" opacity="0.07" filter="url(#filter-blur-md)"/>
+    <circle cx="32"  cy="578" r="30" fill="#10B981" opacity="0.07" filter="url(#filter-blur-md)"/>
+    <circle cx="1148" cy="578" r="30" fill="#7C3AED" opacity="0.06" filter="url(#filter-blur-md)"/>
+
+    <!-- ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+         LAYER 11: SHIMMER (diagonal sweep over full banner)
+    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ -->
+
+    <!-- Primary shimmer sweep -->
+    <rect x="-300" y="0" width="200" height="700"
+      fill="url(#grad-glass-reflect)" opacity="0.5"
+      transform="rotate(-20 590 305)">
+      <animateTransform attributeName="transform" type="translate"
+        values="-1400,0; 2800,0; -1400,0" dur="10s" begin="3s" repeatCount="indefinite" calcMode="linear" additive="sum"/>
+    </rect>
+    <!-- Secondary narrower shimmer -->
+    <rect x="-300" y="0" width="80" height="700"
+      fill="url(#grad-glass-reflect)" opacity="0.30"
+      transform="rotate(-20 590 305)">
+      <animateTransform attributeName="transform" type="translate"
+        values="-1400,0; 2800,0; -1400,0" dur="10s" begin="4.5s" repeatCount="indefinite" calcMode="linear" additive="sum"/>
+    </rect>
+
+  </g><!-- /clip-banner -->
+
+</svg>

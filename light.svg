@@ -1,0 +1,914 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1180" height="610" viewBox="0 0 1180 610" role="img"
+  aria-labelledby="lt-title lt-desc">
+
+  <title id="lt-title">Mohamed Anas A — Full Stack Developer</title>
+  <desc id="lt-desc">Animated light-theme GitHub profile banner for Mohamed Anas A — Full Stack Developer specializing in Java, Spring Boot, React, Docker, AWS and cloud-native systems.</desc>
+
+  <!--
+  ═══════════════════════════════════════════════════════════════════
+    DESIGN TOKENS — LIGHT THEME
+    BG: #FFFFFF   Panel: #F8FAFC   Primary: #0F172A   Secondary: #475569
+    Accent: #2563EB → #06B6D4 → #10B981
+    radius-xl:32  space-lg:48  glow-lg:blur(24)
+  ═══════════════════════════════════════════════════════════════════
+  -->
+
+  <defs>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         GRADIENTS — LIGHT PALETTE
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <linearGradient id="lt-grad-canvas" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="50%"  stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+
+    <!-- Aurora: soft blue-violet (top-left) -->
+    <radialGradient id="lt-grad-aurora-a" cx="22%" cy="28%" r="55%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.22"/>
+      <stop offset="60%"  stop-color="#6366F1" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#FFFFFF"  stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Aurora: cyan (right-center) -->
+    <radialGradient id="lt-grad-aurora-b" cx="78%" cy="65%" r="52%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="55%"  stop-color="#0891B2" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF"  stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Aurora: green (bottom) -->
+    <radialGradient id="lt-grad-aurora-c" cx="52%" cy="88%" r="45%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#10B981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF"  stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Center glow -->
+    <radialGradient id="lt-grad-center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#6366F1" stop-opacity="0.06"/>
+      <stop offset="50%"  stop-color="#06B6D4" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#FFFFFF"  stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Accent gradient: blue → cyan → green -->
+    <linearGradient id="lt-grad-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="48%"  stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <linearGradient id="lt-grad-accent-v" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="50%"  stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Name gradient -->
+    <linearGradient id="lt-grad-name" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2563EB"/>
+      <stop offset="45%"  stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Left panel (white glass) -->
+    <linearGradient id="lt-grad-left-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Right panel -->
+    <linearGradient id="lt-grad-right-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FAFBFF" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#F0F4FF" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Panel border -->
+    <linearGradient id="lt-grad-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#2563EB" stop-opacity="0.45"/>
+      <stop offset="50%"  stop-color="#06B6D4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.40"/>
+    </linearGradient>
+
+    <!-- Title bar (light) -->
+    <linearGradient id="lt-grad-titlebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Screen code area -->
+    <linearGradient id="lt-grad-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Scan gradient -->
+    <linearGradient id="lt-grad-scan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#06B6D4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- DB gradient (light) -->
+    <linearGradient id="lt-grad-db" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+
+    <!-- Docker cube faces (light) -->
+    <linearGradient id="lt-grad-docker-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.70"/>
+    </linearGradient>
+    <linearGradient id="lt-grad-docker-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0369A1" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="lt-grad-docker-right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#0284C7" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#075985" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <!-- Cloud gradient (light) -->
+    <linearGradient id="lt-grad-cloud" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+
+    <!-- Browser gradient (light) -->
+    <linearGradient id="lt-grad-browser" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Spring Boot badge (light) -->
+    <linearGradient id="lt-grad-springboot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#DCFCE7" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#BBF7D0" stop-opacity="0.60"/>
+    </linearGradient>
+
+    <!-- GitHub node (light) -->
+    <radialGradient id="lt-grad-github-node" cx="40%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#EDE9FE" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#DDD6FE" stop-opacity="0.60"/>
+    </radialGradient>
+
+    <!-- Glass reflection (light — very subtle) -->
+    <linearGradient id="lt-grad-glass-reflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="40%"  stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Skill pill (light) -->
+    <linearGradient id="lt-grad-skill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#2563EB" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.06"/>
+    </linearGradient>
+
+    <!-- Card background (light) -->
+    <linearGradient id="lt-grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Laptop body (light) -->
+    <linearGradient id="lt-grad-laptop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         FILTERS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <filter id="lt-filter-aurora" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <filter id="lt-filter-glow-sm" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="lt-filter-glow-md" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Panel shadow (light — lighter shadows) -->
+    <filter id="lt-filter-panel-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2"  stdDeviation="6"  flood-color="#94A3B8" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="8"  stdDeviation="18" flood-color="#64748B" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="0"  stdDeviation="32" flood-color="#6366F1" flood-opacity="0.06"/>
+    </filter>
+
+    <filter id="lt-filter-blur-sm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <filter id="lt-filter-blur-md" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <!-- Noise (very subtle for light theme) -->
+    <filter id="lt-filter-noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grey"/>
+      <feComponentTransfer in="grey" result="dimmed">
+        <feFuncA type="linear" slope="0.020"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="dimmed" mode="multiply"/>
+    </filter>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         PATTERNS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <pattern id="lt-pat-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2E8F0" stroke-width="0.6" stroke-opacity="0.8"/>
+    </pattern>
+
+    <pattern id="lt-pat-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.75" fill="#CBD5E1" fill-opacity="0.55"/>
+    </pattern>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         CLIP PATHS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <clipPath id="lt-clip-banner">
+      <rect x="0" y="0" width="1180" height="610" rx="32" ry="32"/>
+    </clipPath>
+
+    <clipPath id="lt-clip-left">
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"/>
+    </clipPath>
+
+    <clipPath id="lt-clip-right">
+      <rect x="508" y="24" width="648" height="562" rx="24" ry="24"/>
+    </clipPath>
+
+    <clipPath id="lt-clip-screen">
+      <rect x="86" y="188" width="308" height="180" rx="4" ry="4"/>
+    </clipPath>
+
+    <clipPath id="lt-clip-terminal-body">
+      <rect x="524" y="88" width="616" height="486" rx="4" ry="4"/>
+    </clipPath>
+
+    <!-- TYPING CLIPS (identical keyTimes to dark version) -->
+    <clipPath id="lt-clip-type-r1">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;178;178;0;0" keyTimes="0;0.05;0.133;0.167;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lt-clip-type-r2">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;0;126;126;0;0" keyTimes="0;0.167;0.217;0.300;0.333;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lt-clip-type-r3">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;0;192;192;0;0" keyTimes="0;0.333;0.383;0.467;0.500;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lt-clip-type-r4">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;0;138;138;0;0" keyTimes="0;0.500;0.550;0.633;0.667;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lt-clip-type-r5">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;0;182;182;0;0" keyTimes="0;0.667;0.717;0.800;0.833;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="lt-clip-type-r6">
+      <rect x="530" y="365" height="22" width="0">
+        <animate attributeName="width" values="0;0;202;202;0" keyTimes="0;0.833;0.883;0.967;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         MASKS
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <mask id="lt-mask-fade-bottom">
+      <linearGradient id="lt-grad-mask-bottom" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="65%" stop-color="white"/>
+        <stop offset="100%" stop-color="black"/>
+      </linearGradient>
+      <rect width="1180" height="610" fill="url(#lt-grad-mask-bottom)"/>
+    </mask>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         SYMBOLS (same as dark — reused)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <symbol id="lt-sym-win-controls" viewBox="0 0 56 14">
+      <circle cx="7"  cy="7" r="6" fill="#FF5F57"/>
+      <circle cx="28" cy="7" r="6" fill="#FFBD2E"/>
+      <circle cx="49" cy="7" r="6" fill="#28C840"/>
+    </symbol>
+
+    <symbol id="lt-sym-github" viewBox="0 0 20 20">
+      <path d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0110 4.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10 20 4.477 15.523 0 10 0z" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="lt-sym-linkedin" viewBox="0 0 20 20">
+      <path d="M0 1.432C0 .641.656 0 1.465 0h17.07C19.344 0 20 .641 20 1.432v17.136C20 19.36 19.344 20 18.535 20H1.465C.656 20 0 19.36 0 18.568V1.432zm6.18 15.096V7.855H3.296v8.673H6.18zm-1.443-9.86c1.005 0 1.63-.666 1.63-1.499-.019-.85-.625-1.498-1.61-1.498-.986 0-1.63.648-1.63 1.498 0 .833.625 1.499 1.59 1.499h.02zm3.52 9.86h2.885V11.55c0-.259.019-.518.095-.703.208-.518.683-1.054 1.48-1.054 1.043 0 1.46.795 1.46 1.96v4.775h2.884v-5.118c0-2.666-1.422-3.905-3.317-3.905-1.554 0-2.237.866-2.617 1.456h.02v-1.253H8.256c.038.813 0 8.673 0 8.673z" fill="currentColor"/>
+    </symbol>
+
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       ROOT CLIP
+  ═══════════════════════════════════════════════════════════════════ -->
+  <g clip-path="url(#lt-clip-banner)">
+
+    <!-- LAYER 0: Canvas -->
+    <rect width="1180" height="610" fill="url(#lt-grad-canvas)"/>
+
+    <!-- LAYER 1: Aurora (soft, light-mode gentle) -->
+    <ellipse cx="260" cy="175" rx="420" ry="310" fill="url(#lt-grad-aurora-a)" filter="url(#lt-filter-aurora)" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 90,-45; 30,70; -50,20; 0,0" keyTimes="0;0.25;0.50;0.75;1"
+        dur="22s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+    </ellipse>
+    <ellipse cx="940" cy="400" rx="390" ry="290" fill="url(#lt-grad-aurora-b)" filter="url(#lt-filter-aurora)" opacity="0.85">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; -70,35; 40,-60; 20,30; 0,0" keyTimes="0;0.25;0.50;0.75;1"
+        dur="28s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+    </ellipse>
+    <ellipse cx="610" cy="540" rx="360" ry="240" fill="url(#lt-grad-aurora-c)" filter="url(#lt-filter-aurora)" opacity="0.80">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 50,30; -40,-20; 30,10; 0,0" keyTimes="0;0.25;0.50;0.75;1"
+        dur="35s" repeatCount="indefinite" calcMode="spline"
+        keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+    </ellipse>
+
+    <!-- LAYER 2: Noise (very subtle for light theme) -->
+    <rect width="1180" height="610" filter="url(#lt-filter-noise)" opacity="0.7"/>
+
+    <!-- LAYER 3: Grid + dots -->
+    <rect width="1220" height="650" fill="url(#lt-pat-grid)" opacity="0.60">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 40,40; 0,0" dur="45s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <rect width="1180" height="610" fill="url(#lt-pat-dots)" opacity="0.40"/>
+
+    <!-- LAYER 4: Center glow -->
+    <ellipse cx="590" cy="305" rx="560" ry="340" fill="url(#lt-grad-center-glow)">
+      <animate attributeName="rx" values="560;590;540;560" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.6;1" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- LAYER 5: Glass reflections (very subtle on light theme) -->
+    <rect x="-200" y="-40" width="180" height="700" fill="url(#lt-grad-glass-reflect)" opacity="0.35" transform="rotate(-25 590 305)">
+      <animateTransform attributeName="transform" type="translate" values="-700,0; 2000,0; -700,0" dur="12s" repeatCount="indefinite" calcMode="linear" additive="sum"/>
+    </rect>
+
+    <!-- LAYER 6: Particles (light-toned, subtle) -->
+    <g id="lt-layer-particles" opacity="0.7">
+      <circle cx="72"   cy="130" r="1.4" fill="#6366F1"><animate attributeName="cy" values="130;105;130" dur="8.1s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.08;0.40" dur="8.1s"  repeatCount="indefinite"/></circle>
+      <circle cx="410"  cy="540" r="1.0" fill="#6366F1"><animate attributeName="cy" values="540;518;540" dur="13.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.30;0.06;0.30" dur="13.3s" repeatCount="indefinite"/></circle>
+      <circle cx="815"  cy="88"  r="1.0" fill="#6366F1"><animate attributeName="cy" values="88;65;88"   dur="10.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="10.7s" repeatCount="indefinite"/></circle>
+      <circle cx="1135" cy="380" r="1.7" fill="#6366F1"><animate attributeName="cy" values="380;356;380" dur="14.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="14.9s" repeatCount="indefinite"/></circle>
+      <circle cx="285"  cy="400" r="1.7" fill="#6366F1"><animate attributeName="cy" values="400;376;400" dur="17.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="17.8s" repeatCount="indefinite"/></circle>
+      <circle cx="182"  cy="455" r="1.0" fill="#06B6D4"><animate attributeName="cy" values="455;432;455" dur="11.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="11.5s" repeatCount="indefinite"/></circle>
+      <circle cx="560"  cy="46"  r="1.8" fill="#06B6D4"><animate attributeName="cy" values="46;22;46"   dur="7.7s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="7.7s"  repeatCount="indefinite"/></circle>
+      <circle cx="920"  cy="495" r="1.4" fill="#06B6D4"><animate attributeName="cy" values="495;472;495" dur="12.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="12.4s" repeatCount="indefinite"/></circle>
+      <circle cx="322"  cy="82"  r="1.4" fill="#10B981"><animate attributeName="cy" values="82;58;82"   dur="9.2s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="9.2s"  repeatCount="indefinite"/></circle>
+      <circle cx="682"  cy="583" r="1.1" fill="#10B981"><animate attributeName="cy" values="583;560;583" dur="13.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="13.8s" repeatCount="indefinite"/></circle>
+      <circle cx="990"  cy="365" r="1.1" fill="#10B981"><animate attributeName="cy" values="365;342;365" dur="12.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.32;0.08;0.32" dur="12.8s" repeatCount="indefinite"/></circle>
+      <circle cx="375"  cy="198" r="1.4" fill="#6366F1"><animate attributeName="cy" values="198;175;198" dur="11.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="11.8s" repeatCount="indefinite"/></circle>
+      <circle cx="730"  cy="265" r="1.4" fill="#06B6D4"><animate attributeName="cy" values="265;242;265" dur="9.5s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="9.5s"  repeatCount="indefinite"/></circle>
+      <circle cx="1005" cy="82"  r="1.7" fill="#10B981"><animate attributeName="cy" values="82;58;82"   dur="8.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="8.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="147"  cy="322" r="1.1" fill="#06B6D4"><animate attributeName="cy" values="322;298;322" dur="9.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.35;0.08;0.35" dur="9.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="620"  cy="173" r="1.7" fill="#6366F1"><animate attributeName="cy" values="173;149;173" dur="8.3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.15;0.45" dur="8.3s"  repeatCount="indefinite"/></circle>
+      <circle cx="472"  cy="292" r="1.4" fill="#6366F1"><animate attributeName="cy" values="292;269;292" dur="7.8s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="7.8s"  repeatCount="indefinite"/></circle>
+      <circle cx="703"  cy="432" r="1.7" fill="#6366F1"><animate attributeName="cy" values="432;408;432" dur="9.3s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;0.12;0.45" dur="9.3s"  repeatCount="indefinite"/></circle>
+      <circle cx="832"  cy="204" r="1.1" fill="#06B6D4"><animate attributeName="cy" values="204;182;204" dur="12.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.32;0.08;0.32" dur="12.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1074" cy="322" r="1.4" fill="#6366F1"><animate attributeName="cy" values="322;298;322" dur="8.2s"  repeatCount="indefinite"/><animate attributeName="opacity" values="0.40;0.10;0.40" dur="8.2s"  repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         LAYER 7: LEFT PANEL — ILLUSTRATION
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <g id="lt-layer-illustration" clip-path="url(#lt-clip-left)">
+
+      <!-- Panel glass -->
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"
+        fill="url(#lt-grad-left-panel)" filter="url(#lt-filter-panel-shadow)"/>
+      <!-- Specular top edge -->
+      <rect x="44" y="25" width="408" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.80"/>
+      <!-- Border -->
+      <rect x="24" y="24" width="448" height="562" rx="24" ry="24"
+        fill="none" stroke="url(#lt-grad-border)" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.1s" repeatCount="indefinite"/>
+      </rect>
+      <!-- Top inner glow -->
+      <ellipse cx="248" cy="26" rx="160" ry="7" fill="url(#lt-grad-accent)" opacity="0.12" filter="url(#lt-filter-blur-md)"/>
+
+      <!-- GitHub Node -->
+      <g id="lt-illus-github">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <circle cx="248" cy="78" r="32" fill="none" stroke="#6366F1" stroke-width="1" stroke-opacity="0.3">
+          <animate attributeName="r" values="32;42;32" dur="3.2s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values="0.3;0;0.3" dur="3.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="248" cy="78" r="22" fill="url(#lt-grad-github-node)" stroke="#6366F1" stroke-width="1.5" stroke-opacity="0.6"/>
+        <use href="#lt-sym-github" x="237" y="67" width="22" height="22" fill="#6366F1"/>
+        <text x="248" y="116" font-family="system-ui,sans-serif" font-size="9.5" fill="#475569" text-anchor="middle" font-weight="500">GitHub</text>
+      </g>
+
+      <!-- Connector: GitHub → Laptop -->
+      <line x1="248" y1="100" x2="248" y2="144" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2s" repeatCount="indefinite" calcMode="linear"/>
+      </line>
+      <circle cx="248" cy="115" r="2.5" fill="#6366F1" opacity="0.7">
+        <animate attributeName="cy" values="100;144" dur="1.8s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="0.7;0.15;0.7" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Laptop (light theme — lighter lid) -->
+      <g id="lt-illus-laptop">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="9.1s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+
+        <rect x="88" y="148" width="320" height="208" rx="8" ry="8" fill="url(#lt-grad-laptop)"/>
+        <rect x="88" y="148" width="320" height="208" rx="8" ry="8" fill="none" stroke="url(#lt-grad-border)" stroke-width="1.2" stroke-opacity="0.5"/>
+        <!-- Screen (dark for code contrast) -->
+        <rect x="100" y="160" width="296" height="184" rx="4" ry="4" fill="url(#lt-grad-screen)"/>
+        <!-- Tab bar -->
+        <rect x="100" y="160" width="296" height="20" rx="4" ry="4" fill="#0A1628"/>
+        <rect x="100" y="172" width="296" height="8" fill="#0A1628"/>
+        <rect x="104" y="162" width="72" height="16" rx="2" fill="#0F172A" stroke="#2563EB" stroke-width="0.5" stroke-opacity="0.6"/>
+        <text x="118" y="173" font-family="'Courier New',monospace" font-size="7.5" fill="#93C5FD">DevController.java</text>
+
+        <!-- Code -->
+        <g clip-path="url(#lt-clip-screen)">
+          <rect x="100" y="180" width="24" height="164" fill="#0A1020" fill-opacity="0.7"/>
+          <text x="116" y="198" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">1</text>
+          <text x="116" y="211" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">2</text>
+          <text x="116" y="224" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">3</text>
+          <text x="116" y="237" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">4</text>
+          <text x="116" y="250" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">5</text>
+          <text x="116" y="263" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">6</text>
+          <text x="116" y="276" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">7</text>
+          <text x="116" y="289" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">8</text>
+          <text x="116" y="302" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">9</text>
+          <text x="116" y="315" font-family="'Courier New',monospace" font-size="8" fill="#374151" text-anchor="end">10</text>
+          <text x="126" y="198" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">@RestController</text>
+          <text x="126" y="211" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">@RequestMapping<tspan fill="#F8FAFC">("/api")</tspan></text>
+          <text x="126" y="224" font-family="'Courier New',monospace" font-size="8.5"><tspan fill="#67E8F9">public class </tspan><tspan fill="#FDE68A">DevController</tspan><tspan fill="#F8FAFC"> {</tspan></text>
+          <text x="134" y="237" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @Autowired</text>
+          <text x="134" y="250" font-family="'Courier New',monospace" font-size="8.5"><tspan fill="#67E8F9">  private </tspan><tspan fill="#86EFAC">UserRepo </tspan><tspan fill="#F8FAFC">repo;</tspan></text>
+          <text x="134" y="263" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @GetMapping</text>
+          <text x="134" y="276" font-family="'Courier New',monospace" font-size="8.5"><tspan fill="#67E8F9">  public </tspan><tspan fill="#86EFAC">List</tspan><tspan fill="#F8FAFC">&lt;User&gt; getAll() {</tspan></text>
+          <text x="142" y="289" font-family="'Courier New',monospace" font-size="8.5"><tspan fill="#67E8F9">    return </tspan><tspan fill="#F8FAFC">repo.</tspan><tspan fill="#86EFAC">findAll</tspan><tspan fill="#F8FAFC">();</tspan></text>
+          <text x="134" y="302" font-family="'Courier New',monospace" font-size="8.5" fill="#F8FAFC">  }</text>
+          <text x="134" y="315" font-family="'Courier New',monospace" font-size="8.5" fill="#C084FC">  @PostMapping</text>
+
+          <rect x="100" y="281" width="296" height="10" fill="#2563EB" opacity="0.12">
+            <animate attributeName="y" values="281;294;307;281" dur="5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="228" y="282" width="5" height="8" fill="#06B6D4" opacity="0.9">
+            <animate attributeName="opacity" values="0.9;0;0.9" dur="0.9s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="100" y="160" width="296" height="40" fill="url(#lt-grad-scan)" opacity="0.5">
+            <animate attributeName="y" values="160;344;160" dur="3.8s" repeatCount="indefinite" calcMode="linear"/>
+          </rect>
+        </g>
+
+        <rect x="78" y="356" width="340" height="18" rx="4" fill="#CBD5E1" stroke="#94A3B8" stroke-width="0.8"/>
+        <rect x="188" y="361" width="100" height="8" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="0.8"/>
+      </g>
+
+      <!-- Connector: Laptop → Spring Boot -->
+      <line x1="374" y1="220" x2="430" y2="220" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="1.6s" repeatCount="indefinite"/>
+      </line>
+      <circle cx="390" cy="220" r="2" fill="#10B981" opacity="0.8">
+        <animate attributeName="cx" values="374;430" dur="1.4s" repeatCount="indefinite" calcMode="linear"/>
+        <animate attributeName="opacity" values="0.8;0.15;0.8" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Spring Boot Node (light) -->
+      <g id="lt-illus-springboot">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 4,-8; 0,0" dur="7.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <rect x="382" y="144" width="80" height="56" rx="10" fill="url(#lt-grad-springboot)" stroke="#16A34A" stroke-width="1.2" stroke-opacity="0.6"/>
+        <circle cx="422" cy="162" r="8" fill="none" stroke="#16A34A" stroke-width="1.5" stroke-opacity="0.7"/>
+        <path d="M418 158 Q422 154 426 158 Q422 170 418 158" fill="#16A34A" opacity="0.6"/>
+        <text x="422" y="188" font-family="system-ui,sans-serif" font-size="8" fill="#166534" text-anchor="middle" font-weight="600">Spring Boot</text>
+        <rect x="382" y="144" width="80" height="56" rx="10" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.3">
+          <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2.4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <!-- Connector: Spring Boot → Database -->
+      <line x1="422" y1="200" x2="375" y2="340" stroke="#06B6D4" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.2s" repeatCount="indefinite"/>
+      </line>
+
+      <!-- Database Node (light) -->
+      <g id="lt-illus-database">
+        <animateTransform attributeName="transform" type="translate" values="0,0; -4,8; 0,0" dur="10.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <rect x="338" y="342" width="72" height="72" rx="6" fill="url(#lt-grad-db)" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.5"/>
+        <ellipse cx="374" cy="346" rx="36" ry="9" fill="#BFDBFE" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.7"/>
+        <ellipse cx="374" cy="370" rx="36" ry="9" fill="none" stroke="#0284C7" stroke-width="0.7" stroke-opacity="0.3"/>
+        <ellipse cx="374" cy="414" rx="36" ry="9" fill="none" stroke="#0284C7" stroke-width="0.7" stroke-opacity="0.3"/>
+        <text x="374" y="396" font-family="system-ui,sans-serif" font-size="8.5" fill="#1D4ED8" text-anchor="middle" font-weight="600">MySQL</text>
+        <ellipse cx="374" cy="346" rx="36" ry="9" fill="#0284C7" opacity="0.10">
+          <animate attributeName="opacity" values="0.10;0.25;0.10" dur="2.6s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+
+      <!-- Connector: Database → Cloud -->
+      <line x1="338" y1="384" x2="200" y2="384" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="1.9s" repeatCount="indefinite"/>
+      </line>
+
+      <!-- Cloud Node (light) -->
+      <g id="lt-illus-cloud">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 6,10; 0,0" dur="13.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <circle cx="168" cy="378" r="22" fill="url(#lt-grad-cloud)" stroke="#7DD3FC" stroke-width="1"/>
+        <circle cx="188" cy="388" r="18" fill="url(#lt-grad-cloud)" stroke="#7DD3FC" stroke-width="1"/>
+        <circle cx="148" cy="388" r="16" fill="url(#lt-grad-cloud)" stroke="#7DD3FC" stroke-width="1"/>
+        <rect x="132" y="388" width="74" height="20" fill="url(#lt-grad-cloud)"/>
+        <text x="168" y="403" font-family="system-ui,sans-serif" font-size="9" fill="#0369A1" text-anchor="middle" font-weight="600">AWS</text>
+        <circle cx="168" cy="378" r="22" fill="#06B6D4" opacity="0.08">
+          <animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.5s" repeatCount="indefinite"/>
+          <animate attributeName="r" values="22;26;22" dur="3.5s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <!-- Connector: Laptop → Docker -->
+      <line x1="140" y1="356" x2="104" y2="430" stroke="#0EA5E9" stroke-width="1.2" stroke-opacity="0.45" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.4s" repeatCount="indefinite"/>
+      </line>
+
+      <!-- Docker Node (same isometric — colors stay) -->
+      <g id="lt-illus-docker">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 8,-6; 0,0" dur="11.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <polygon points="68,438 104,420 140,438 104,456" fill="url(#lt-grad-docker-top)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.7"/>
+        <polygon points="68,438 68,462 104,480 104,456" fill="url(#lt-grad-docker-left)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.5"/>
+        <polygon points="104,456 140,438 140,462 104,480" fill="url(#lt-grad-docker-right)" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.5"/>
+        <rect x="95" y="432" width="7" height="5" rx="1" fill="#38BDF8" opacity="0.7" transform="rotate(-28 98 434)"/>
+        <rect x="107" y="426" width="7" height="5" rx="1" fill="#38BDF8" opacity="0.7" transform="rotate(-28 110 428)"/>
+        <text x="104" y="493" font-family="system-ui,sans-serif" font-size="9" fill="#0369A1" text-anchor="middle" font-weight="600">Docker</text>
+        <ellipse cx="104" cy="480" rx="28" ry="6" fill="#06B6D4" opacity="0.12" filter="url(#lt-filter-blur-sm)">
+          <animate attributeName="opacity" values="0.12;0.28;0.12" dur="2.8s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+
+      <!-- Connector: Docker → Browser -->
+      <line x1="140" y1="468" x2="200" y2="510" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.40" stroke-dasharray="4,3">
+        <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.6s" repeatCount="indefinite"/>
+      </line>
+
+      <!-- Browser (light) -->
+      <g id="lt-illus-browser">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="8.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+        <rect x="188" y="500" width="122" height="72" rx="8" fill="url(#lt-grad-browser)" stroke="#CBD5E1" stroke-width="1.2"/>
+        <rect x="188" y="500" width="122" height="18" rx="8" fill="#E2E8F0"/>
+        <rect x="188" y="510" width="122" height="8" fill="#E2E8F0"/>
+        <circle cx="198" cy="509" r="3" fill="#FF5F57" opacity="0.8"/>
+        <circle cx="207" cy="509" r="3" fill="#FFBD2E" opacity="0.8"/>
+        <circle cx="216" cy="509" r="3" fill="#28C840" opacity="0.8"/>
+        <rect x="222" y="504" width="82" height="10" rx="5" fill="#FFFFFF" opacity="0.8"/>
+        <text x="225" y="512" font-family="'Courier New',monospace" font-size="6" fill="#94A3B8">localhost:3000</text>
+        <rect x="196" y="526" width="96" height="5" rx="2" fill="#E2E8F0"/>
+        <rect x="196" y="534" width="72" height="4" rx="2" fill="#F1F5F9"/>
+        <rect x="196" y="541" width="84" height="4" rx="2" fill="#F1F5F9"/>
+        <rect x="196" y="551" width="8"  height="14" rx="1" fill="#6366F1" opacity="0.7"/>
+        <rect x="207" y="545" width="8"  height="20" rx="1" fill="#06B6D4" opacity="0.7"/>
+        <rect x="218" y="548" width="8"  height="17" rx="1" fill="#10B981" opacity="0.7"/>
+        <rect x="229" y="543" width="8"  height="22" rx="1" fill="#6366F1" opacity="0.6"/>
+        <text x="249" y="555" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8" text-anchor="middle">Browser</text>
+        <rect x="188" y="500" width="122" height="72" rx="8" fill="none" stroke="#6366F1" stroke-width="1" stroke-opacity="0.20">
+          <animate attributeName="stroke-opacity" values="0.20;0.50;0.20" dur="3.3s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <!-- Git branch (light) -->
+      <g id="lt-illus-git">
+        <line x1="345" y1="470" x2="345" y2="558" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M345,496 Q368,496 368,512 L368,540" fill="none" stroke="#6366F1" stroke-width="1.2" stroke-opacity="0.40" stroke-dasharray="4,3">
+          <animate attributeName="stroke-dashoffset" values="0;-14;0" dur="2.3s" repeatCount="indefinite"/>
+        </path>
+        <circle cx="345" cy="476" r="4.5" fill="#10B981" stroke="#F8FAFC" stroke-width="1.5"/>
+        <circle cx="345" cy="500" r="3.5" fill="#10B981" stroke="#F8FAFC" stroke-width="1.2"/>
+        <circle cx="345" cy="524" r="4.5" fill="#6366F1" stroke="#F8FAFC" stroke-width="1.5">
+          <animate attributeName="r" values="4.5;6.5;4.5" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="368" cy="524" r="3.5" fill="#6366F1" stroke="#F8FAFC" stroke-width="1.2"/>
+        <circle cx="368" cy="540" r="3.5" fill="#06B6D4" stroke="#F8FAFC" stroke-width="1.2"/>
+        <circle cx="345" cy="548" r="4.5" fill="#06B6D4" stroke="#F8FAFC" stroke-width="1.5"/>
+        <text x="354" y="480" font-family="'Courier New',monospace" font-size="7" fill="#059669">main</text>
+        <text x="375" y="528" font-family="'Courier New',monospace" font-size="7" fill="#4338CA">feat</text>
+        <text x="354" y="552" font-family="'Courier New',monospace" font-size="7" fill="#0891B2">HEAD</text>
+      </g>
+
+      <!-- Panel reflection sweep -->
+      <rect x="24" y="-580" width="448" height="562" fill="url(#lt-grad-glass-reflect)" rx="24">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,1172; 0,0" dur="8s" repeatCount="indefinite" begin="1.2s" calcMode="linear"/>
+      </rect>
+
+    </g><!-- /lt-layer-illustration -->
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         LAYER 8: RIGHT PANEL — TERMINAL (LIGHT)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <g id="lt-layer-terminal" clip-path="url(#lt-clip-right)">
+
+      <rect x="508" y="24" width="648" height="562" rx="24" fill="url(#lt-grad-right-panel)" filter="url(#lt-filter-panel-shadow)"/>
+      <rect x="528" y="25" width="608" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.90"/>
+      <rect x="508" y="24" width="648" height="562" rx="24" fill="none" stroke="url(#lt-grad-border)" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.35;0.75;0.35" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <ellipse cx="832" cy="26" rx="240" ry="8" fill="url(#lt-grad-accent)" opacity="0.12" filter="url(#lt-filter-blur-md)"/>
+
+      <!-- Title bar (light) -->
+      <rect x="508" y="24" width="648" height="56" rx="24" fill="url(#lt-grad-titlebar)" fill-opacity="0.85"/>
+      <rect x="508" y="56" width="648" height="24" fill="url(#lt-grad-titlebar)" fill-opacity="0.85"/>
+
+      <use href="#lt-sym-win-controls" x="532" y="43" width="56" height="14"/>
+
+      <text x="832" y="56" font-family="'Courier New',monospace" font-size="12" fill="#94A3B8" text-anchor="middle">
+        mohamed@github:~ — zsh
+      </text>
+
+      <line x1="508" y1="80" x2="1156" y2="80" stroke="#E2E8F0" stroke-width="1"/>
+
+      <!-- Terminal content (light — text colors adjusted for dark-on-light) -->
+      <g clip-path="url(#lt-clip-terminal-body)">
+
+        <text x="530" y="108" font-family="'Courier New',monospace" font-size="11.5" opacity="0">
+          <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.04;0.06;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#0891B2">mohamed</tspan><tspan fill="#374151">@</tspan><tspan fill="#059669">github</tspan><tspan fill="#374151">:~$</tspan>
+          <tspan fill="#64748B" font-size="11"> boot --profile</tspan>
+        </text>
+
+        <text x="530" y="128" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;1;1" keyTimes="0;0.06;0.09;0.12;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#6366F1">▶</tspan><tspan fill="#94A3B8">  Initializing profile</tspan><tspan fill="#6366F1">...</tspan>
+        </text>
+        <text x="530" y="145" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.09;0.12;0.15;0.18;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Initializing profile</tspan>
+        </text>
+
+        <text x="530" y="162" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;1;1" keyTimes="0;0.12;0.15;0.18;0.21;0.24;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#0891B2">▶</tspan><tspan fill="#94A3B8">  Loading repositories</tspan><tspan fill="#0891B2">...</tspan>
+        </text>
+        <text x="530" y="179" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" keyTimes="0;0.15;0.18;0.21;0.24;0.27;0.30;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Loading repositories</tspan>
+        </text>
+
+        <text x="530" y="196" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1" keyTimes="0;0.18;0.21;0.24;0.27;0.30;0.33;0.36;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#6366F1">▶</tspan><tspan fill="#94A3B8">  Connecting GitHub</tspan><tspan fill="#6366F1">...</tspan>
+        </text>
+        <text x="530" y="213" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.21;0.24;0.27;0.30;0.33;0.36;0.39;0.42;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Connecting GitHub</tspan>
+        </text>
+
+        <text x="530" y="230" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.24;0.27;0.30;0.33;0.36;0.39;0.42;0.45;0.48;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#0891B2">▶</tspan><tspan fill="#94A3B8">  Loading AWS credentials</tspan><tspan fill="#0891B2">...</tspan>
+        </text>
+        <text x="530" y="247" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.27;0.30;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Loading AWS credentials</tspan>
+        </text>
+
+        <text x="530" y="264" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.30;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">▶</tspan><tspan fill="#94A3B8">  Initializing Java runtime</tspan><tspan fill="#059669">...</tspan>
+        </text>
+        <text x="530" y="281" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.33;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Initializing Java runtime</tspan>
+        </text>
+
+        <text x="530" y="298" font-family="'Courier New',monospace" font-size="11" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.36;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#6366F1">▶</tspan><tspan fill="#94A3B8">  Rendering portfolio</tspan><tspan fill="#6366F1">...</tspan>
+        </text>
+        <text x="530" y="315" font-family="'Courier New',monospace" font-size="11.5" font-weight="700" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.39;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;1" dur="28s" repeatCount="indefinite"/>
+          <tspan fill="#059669">✓</tspan><tspan fill="#065F46">  Ready.</tspan>
+        </text>
+
+        <line x1="530" y1="328" x2="1138" y2="328" stroke="#E2E8F0" stroke-width="1" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;1" dur="28s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Hi greeting -->
+        <text x="530" y="356" font-family="system-ui,-apple-system,sans-serif" font-size="19" fill="#64748B" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;1" dur="28s" repeatCount="indefinite"/>
+          Hi 👋 I'm
+        </text>
+
+        <!-- Name -->
+        <text x="530" y="400" font-family="system-ui,-apple-system,sans-serif" font-size="38" font-weight="700" fill="url(#lt-grad-name)" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;1" dur="28s" repeatCount="indefinite"/>
+          Mohamed Anas A
+        </text>
+        <rect x="530" y="408" width="0" height="2.5" rx="1.25" fill="url(#lt-grad-accent)">
+          <animate attributeName="width" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;360;360" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.95;1" dur="28s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Role prompt -->
+        <text x="530" y="436" font-family="'Courier New',monospace" font-size="11.5" fill="#94A3B8" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;1" dur="28s" repeatCount="indefinite"/>
+          $ whoami --role
+        </text>
+
+        <!-- Role typing (light — darker colors for readability) -->
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#1D4ED8" clip-path="url(#lt-clip-type-r1)">Full Stack Developer</text>
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#7C3AED" clip-path="url(#lt-clip-type-r2)">Java Developer</text>
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#059669" clip-path="url(#lt-clip-type-r3)">Spring Boot Developer</text>
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#0891B2" clip-path="url(#lt-clip-type-r4)">React Developer</text>
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#92400E" clip-path="url(#lt-clip-type-r5)">AWS &amp; DevOps Learner</text>
+        <text x="530" y="458" font-family="'Courier New',monospace" font-size="15" font-weight="600" fill="#9D174D" clip-path="url(#lt-clip-type-r6)">Open Source Enthusiast</text>
+
+        <!-- Cursor -->
+        <rect x="530" y="444" width="2.2" height="17" rx="1.1" fill="#1D4ED8">
+          <animate attributeName="opacity" values="1;0;1" dur="0.85s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="530;710;710;530;530;662;662;530;530;724;724;530;530;670;670;530;530;714;714;530;530;734;734;530" keyTimes="0;0.05;0.133;0.167;0.167;0.217;0.300;0.333;0.333;0.383;0.467;0.500;0.500;0.550;0.633;0.667;0.667;0.717;0.800;0.833;0.833;0.883;0.967;1" dur="30s" repeatCount="indefinite" calcMode="linear"/>
+        </rect>
+
+        <line x1="530" y1="475" x2="1138" y2="475" stroke="#E2E8F0" stroke-width="1" opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;1" dur="28s" repeatCount="indefinite"/>
+        </line>
+
+        <!-- Profile details (light palette) -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;1" dur="28s" repeatCount="indefinite"/>
+          <text x="530" y="496" font-family="system-ui,sans-serif" font-size="11.5" fill="#64748B">
+            📍<tspan fill="#334155">  Coimbatore, Tamil Nadu, India</tspan>
+          </text>
+          <text x="810" y="496" font-family="system-ui,sans-serif" font-size="11.5" fill="#64748B">
+            🎓<tspan fill="#334155">  B.E Computer Science &amp; Engineering</tspan>
+          </text>
+        </g>
+
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.42;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;1" dur="28s" repeatCount="indefinite"/>
+          <text x="530" y="514" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">
+            🏫<tspan fill="#475569">  Sri Eshwar College of Engineering</tspan>
+          </text>
+          <text x="810" y="514" font-family="system-ui,sans-serif" font-size="11" fill="#64748B">
+            🚀<tspan fill="#475569">  Building scalable Full Stack Applications</tspan>
+          </text>
+        </g>
+
+        <!-- Skill pills (light — dark text for readability) -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.1s" repeatCount="indefinite"/>
+            <rect x="530" y="527" width="46" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#6366F1" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="553" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#4338CA" text-anchor="middle" font-weight="600">Java</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.7s" repeatCount="indefinite"/>
+            <rect x="584" y="527" width="82" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#059669" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="625" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#065F46" text-anchor="middle" font-weight="600">Spring Boot</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.9s" repeatCount="indefinite"/>
+            <rect x="674" y="527" width="52" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#0891B2" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="700" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#164E63" text-anchor="middle" font-weight="600">React</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.4s" repeatCount="indefinite"/>
+            <rect x="734" y="527" width="58" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="763" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#0C4A6E" text-anchor="middle" font-weight="600">Docker</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.7s" repeatCount="indefinite"/>
+            <rect x="800" y="527" width="44" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#D97706" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="822" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#92400E" text-anchor="middle" font-weight="600">AWS</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="4.1s" repeatCount="indefinite"/>
+            <rect x="852" y="527" width="78" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#D97706" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="891" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#92400E" text-anchor="middle" font-weight="600">JavaScript</text>
+          </g>
+        </g>
+
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.8s" repeatCount="indefinite"/>
+            <rect x="530" y="555" width="42" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#DC2626" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="551" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#991B1B" text-anchor="middle" font-weight="600">Git</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.2s" repeatCount="indefinite"/>
+            <rect x="580" y="555" width="56" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#0891B2" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="608" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#164E63" text-anchor="middle" font-weight="600">MySQL</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="4.5s" repeatCount="indefinite"/>
+            <rect x="644" y="555" width="50" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#059669" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="669" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#065F46" text-anchor="middle" font-weight="600">Linux</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3.6s" repeatCount="indefinite"/>
+            <rect x="702" y="555" width="62" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#DC2626" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="733" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#991B1B" text-anchor="middle" font-weight="600">Jenkins</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="2.5s" repeatCount="indefinite"/>
+            <rect x="772" y="555" width="68" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.6"/>
+            <text x="806" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#5B21B6" text-anchor="middle" font-weight="600">REST API</text>
+          </g>
+          <g><animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="5.2s" repeatCount="indefinite"/>
+            <rect x="848" y="555" width="76" height="22" rx="11" fill="url(#lt-grad-skill)" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5"/>
+            <text x="886" y="570" font-family="system-ui,sans-serif" font-size="9.5" fill="#0C4A6E" text-anchor="middle" font-weight="600">Kubernetes</text>
+          </g>
+        </g>
+
+        <!-- Social links (light) -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.45;0.48;0.51;0.54;0.57;0.60;0.63;0.66;0.69;0.72;0.75;0.78;0.80;0.82;0.85;0.88;0.90;0.92;0.94;0.96;0.98;0.99;1.0;1" dur="28s" repeatCount="indefinite"/>
+          <rect x="940" y="527" width="90" height="28" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <use href="#lt-sym-github" x="950" y="534" width="14" height="14" fill="#374151"/>
+          <text x="971" y="545" font-family="system-ui,sans-serif" font-size="10" fill="#374151" font-weight="500">GitHub</text>
+          <rect x="940" y="561" width="98" height="28" rx="8" fill="#F8FAFC" stroke="#0284C7" stroke-width="1" stroke-opacity="0.5"/>
+          <use href="#lt-sym-linkedin" x="950" y="568" width="14" height="14" fill="#0284C7"/>
+          <text x="971" y="579" font-family="system-ui,sans-serif" font-size="10" fill="#0369A1" font-weight="500">LinkedIn</text>
+        </g>
+
+      </g><!-- /lt-clip-terminal-body -->
+
+      <!-- Panel reflection sweep (light) -->
+      <rect x="508" y="-580" width="648" height="562" fill="url(#lt-grad-glass-reflect)" rx="24">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,1172; 0,0" dur="9s" repeatCount="indefinite" begin="2.4s" calcMode="linear"/>
+      </rect>
+
+    </g><!-- /lt-layer-terminal -->
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         LAYER 9: FLOATING CARDS (light)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+    <!-- Card A: Backend -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 5,-9; 0,0" dur="7.3s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+      <rect x="36" y="36" width="102" height="64" rx="12" fill="url(#lt-grad-card)" stroke="#E2E8F0" stroke-width="1" filter="url(#lt-filter-blur-sm)"/>
+      <rect x="36" y="36" width="102" height="64" rx="12" fill="none" stroke="url(#lt-grad-accent)" stroke-width="0.8" stroke-opacity="0.35"/>
+      <rect x="38" y="37" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.80"/>
+      <text x="87" y="58" font-family="system-ui,sans-serif" font-size="9.5" fill="#065F46" text-anchor="middle" font-weight="600">Backend</text>
+      <text x="87" y="72" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">Java · Spring Boot</text>
+      <text x="87" y="84" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">REST API · MySQL</text>
+      <circle cx="49" cy="49" r="3" fill="#10B981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2.3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Card B: DevOps -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; -6,8; 0,0" dur="9.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+      <rect x="36" y="520" width="102" height="62" rx="12" fill="url(#lt-grad-card)" stroke="#E2E8F0" stroke-width="1" filter="url(#lt-filter-blur-sm)"/>
+      <rect x="36" y="520" width="102" height="62" rx="12" fill="none" stroke="url(#lt-grad-accent)" stroke-width="0.8" stroke-opacity="0.30"/>
+      <rect x="38" y="521" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.80"/>
+      <text x="87" y="542" font-family="system-ui,sans-serif" font-size="9.5" fill="#0C4A6E" text-anchor="middle" font-weight="600">DevOps</text>
+      <text x="87" y="556" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">Docker · Jenkins</text>
+      <text x="87" y="570" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">AWS · Linux</text>
+      <circle cx="49" cy="533" r="3" fill="#06B6D4">
+        <animate attributeName="opacity" values="1;0.4;1" dur="3.1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Card C: Frontend -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 7,-5; 0,0" dur="11.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"/>
+      <rect x="36" y="282" width="102" height="60" rx="12" fill="url(#lt-grad-card)" stroke="#E2E8F0" stroke-width="1" filter="url(#lt-filter-blur-sm)" opacity="0.90"/>
+      <rect x="36" y="282" width="102" height="60" rx="12" fill="none" stroke="url(#lt-grad-accent)" stroke-width="0.8" stroke-opacity="0.28"/>
+      <rect x="38" y="283" width="98" height="1.5" rx="0.75" fill="#FFFFFF" fill-opacity="0.80"/>
+      <text x="87" y="303" font-family="system-ui,sans-serif" font-size="9.5" fill="#164E63" text-anchor="middle" font-weight="600">Frontend</text>
+      <text x="87" y="317" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">React · JavaScript</text>
+      <text x="87" y="331" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B" text-anchor="middle">HTML5 · CSS3</text>
+      <circle cx="49" cy="295" r="3" fill="#06B6D4">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.9s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- LAYER 10: Border highlight (light) -->
+    <rect x="1" y="1" width="1178" height="608" rx="31" fill="none" stroke="url(#lt-grad-accent)" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values="0.25;0.60;0.25" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="3" y="3" width="1174" height="604" rx="30" fill="none" stroke="#CBD5E1" stroke-width="0.5" stroke-opacity="0.8"/>
+
+    <circle cx="32"   cy="32"  r="30" fill="#6366F1" opacity="0.05" filter="url(#lt-filter-blur-md)"/>
+    <circle cx="1148" cy="32"  r="30" fill="#06B6D4" opacity="0.05" filter="url(#lt-filter-blur-md)"/>
+    <circle cx="32"   cy="578" r="30" fill="#10B981" opacity="0.05" filter="url(#lt-filter-blur-md)"/>
+    <circle cx="1148" cy="578" r="30" fill="#6366F1" opacity="0.04" filter="url(#lt-filter-blur-md)"/>
+
+    <!-- LAYER 11: Shimmer (subtle on light) -->
+    <rect x="-300" y="0" width="200" height="700" fill="url(#lt-grad-glass-reflect)" opacity="0.40" transform="rotate(-20 590 305)">
+      <animateTransform attributeName="transform" type="translate" values="-1400,0; 2800,0; -1400,0" dur="10s" begin="3s" repeatCount="indefinite" calcMode="linear" additive="sum"/>
+    </rect>
+
+  </g><!-- /lt-clip-banner -->
+
+</svg>
