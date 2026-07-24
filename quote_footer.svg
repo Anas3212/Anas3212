@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 260" width="1180" height="260" role="img" aria-label="Developer Quote & Profile Telemetry — Mohamed Anas A">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="qf-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Radial Lighting -->
+    <radialGradient id="qf-glow-blue" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="qf-glow-cyan" cx="70%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="qf-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.68"/>
+    </linearGradient>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="qf-border-anim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#06B6D4;#8B5CF6;#3B82F6" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4;#8B5CF6;#3B82F6;#06B6D4" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="qf-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.3"/>
+      <circle cx="0" cy="0" r="1" fill="#3B82F6" fill-opacity="0.25"/>
+    </pattern>
+
+    <!-- Filters & Shadows -->
+    <filter id="qf-card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="qf-glow-pulse" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes card-float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+    @keyframes quote-pulse { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.4; } }
+    @keyframes particle-drift { 0%, 100% { opacity: 0.15; transform: translate(0, 0); } 50% { opacity: 0.65; transform: translate(15px, -15px); } }
+
+    .qf-float { animation: card-float 6s ease-in-out infinite; }
+    .glass-card { transition: transform 0.3s ease, filter 0.3s ease; cursor: pointer; }
+    .glass-card:hover { transform: translateY(-6px) scale(1.01); filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.75)); }
+
+    .quote-mark { animation: quote-pulse 4s ease-in-out infinite; }
+    .bg-particle { animation: particle-drift 10s ease-in-out infinite alternate; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .qf-float, .quote-mark, .bg-particle { animation: none !important; }
+    }
+  </style>
+
+  <!-- Container Canvas Background -->
+  <rect width="1180" height="260" rx="20" fill="url(#qf-bg)"/>
+
+  <!-- Radial Glow Background Highlights -->
+  <rect width="1180" height="260" rx="20" fill="url(#qf-glow-blue)"/>
+  <rect width="1180" height="260" rx="20" fill="url(#qf-glow-cyan)"/>
+
+  <!-- Circuit & Grid Overlay -->
+  <rect width="1180" height="260" rx="20" fill="url(#qf-grid)"/>
+
+  <!-- Floating Micro Particles -->
+  <g opacity="0.55">
+    <circle cx="80" cy="40" r="1.5" fill="#3B82F6" class="bg-particle"/>
+    <circle cx="580" cy="25" r="2.0" fill="#06B6D4" class="bg-particle" style="animation-delay: -3s;"/>
+    <circle cx="1080" cy="50" r="1.5" fill="#8B5CF6" class="bg-particle" style="animation-delay: -6s;"/>
+    <text x="48" y="246" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8" opacity="0.3">&lt;dev_quote_engine&gt;</text>
+    <text x="1030" y="246" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC" opacity="0.3">&lt;/dev_quote_engine&gt;</text>
+  </g>
+
+  <!-- Outer Canvas Border -->
+  <rect x="1" y="1" width="1178" height="258" rx="19" fill="none" stroke="url(#qf-border-anim)" stroke-width="1.5"/>
+
+  <!-- ================================================================= -->
+  <!-- MAIN GLASS CARD: DEVELOPER QUOTE                                  -->
+  <!-- ================================================================= -->
+  <g transform="translate(48, 30)">
+    <g class="qf-float glass-card" filter="url(#qf-card-shadow)">
+      <rect width="1084" height="195" rx="18" fill="url(#qf-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect x="2" y="2" width="1080" height="2" rx="1" fill="#FFFFFF" fill-opacity="0.18"/>
+      <rect width="1084" height="195" rx="18" fill="none" stroke="url(#qf-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
+
+      <!-- Large Glowing Quote Icon -->
+      <g transform="translate(36, 30)">
+        <text x="0" y="50" font-family="'Georgia', serif" font-size="80" font-weight="700" fill="#06B6D4" opacity="0.35" class="quote-mark">“</text>
+      </g>
+
+      <!-- Main Quote Body Text -->
+      <g transform="translate(100, 48)">
+        <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#F8FAFC" font-style="italic" letter-spacing="0.2">
+          "Simplicity is prerequisite for reliability. Software engineering is the art of building systems
+        </text>
+        <text x="0" y="28" font-family="'Inter', system-ui, sans-serif" font-size="15" font-weight="600" fill="#38BDF8" font-style="italic" letter-spacing="0.2">
+          that outlive their initial requirements through clean architecture and continuous learning."
+        </text>
+
+        <!-- Author Tag & Subtitle -->
+        <g transform="translate(0, 68)">
+          <rect width="210" height="24" rx="12" fill="#0F172A" stroke="#3B82F6" stroke-width="0.8"/>
+          <circle cx="16" cy="12" r="3" fill="#34D399" filter="url(#qf-glow-pulse)"/>
+          <text x="28" y="16" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#38BDF8">— Edsger W. Dijkstra</text>
+
+          <text x="225" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">// Turing Award Winner &amp; Computer Science Pioneer</text>
+        </g>
+      </g>
+
+      <!-- Divider Line -->
+      <line x1="36" y1="145" x2="1048" y2="145" stroke="#1E293B" stroke-width="1"/>
+
+      <!-- Bottom Status & Telemetry Bar -->
+      <g transform="translate(36, 168)">
+        <!-- Left: Live Telemetry Indicator -->
+        <g transform="translate(0, 0)">
+          <circle cx="6" cy="0" r="3.5" fill="#22C55E" filter="url(#qf-glow-pulse)">
+            <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+          <text x="16" y="4" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34D399">SYSTEM TELEMETRY: ONLINE</text>
+        </g>
+
+        <!-- Center: Profile Crafting Credit -->
+        <text x="542" y="4" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">
+          Crafted with precision by <tspan fill="#38BDF8">Mohamed Anas A</tspan> • 2025
+        </text>
+
+        <!-- Right: Repository Star CTA -->
+        <g transform="translate(1012, 0)">
+          <text x="0" y="4" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#FACC15" text-anchor="end">⭐ Star this repo if inspiring</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>
