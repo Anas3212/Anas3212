@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 270" width="1180" height="270" role="img" aria-label="Developer Introduction — Mohamed Anas A">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 300" width="1180" height="300" role="img" aria-label="Developer Introduction — Mohamed Anas A">
   <defs>
     <!-- Dark Background Gradient -->
     <linearGradient id="hi-bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -9,12 +9,12 @@
 
     <!-- Radial Glow Lighting -->
     <radialGradient id="hi-glow-blue" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
     </radialGradient>
 
     <radialGradient id="hi-glow-cyan" cx="80%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.22"/>
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#030712" stop-opacity="0"/>
     </radialGradient>
 
@@ -44,13 +44,13 @@
     <!-- Premium Hero Gradient Text -->
     <linearGradient id="hero-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="35%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#C084FC"/>
     </linearGradient>
 
     <linearGradient id="pill-glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#0891B2" stop-opacity="0.25"/>
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0.30"/>
     </linearGradient>
 
     <!-- Grid Pattern -->
@@ -74,7 +74,7 @@
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@500;600;700;800&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@600;700;800&amp;display=swap');
 
     @keyframes wave-hand {
       0%, 100% { transform: rotate(0deg); }
@@ -91,7 +91,7 @@
       50% { opacity: 0.7; transform: translate(12px, -12px); }
     }
 
-    .waving-hand { transform-origin: 36px 36px; animation: wave-hand 2.5s ease-in-out infinite; }
+    .waving-hand { transform-origin: 40px 40px; animation: wave-hand 2.5s ease-in-out infinite; }
     .badge-1 { animation: card-float-1 5s ease-in-out infinite; }
 
     .glass-card { transition: transform 0.3s ease, filter 0.3s ease; cursor: pointer; }
@@ -105,93 +105,93 @@
   </style>
 
   <!-- Container Canvas Background -->
-  <rect width="1180" height="270" rx="20" fill="url(#hi-bg)"/>
+  <rect width="1180" height="300" rx="20" fill="url(#hi-bg)"/>
 
   <!-- Radial Glow Background Highlights -->
-  <rect width="1180" height="270" rx="20" fill="url(#hi-glow-blue)"/>
-  <rect width="1180" height="270" rx="20" fill="url(#hi-glow-cyan)"/>
+  <rect width="1180" height="300" rx="20" fill="url(#hi-glow-blue)"/>
+  <rect width="1180" height="300" rx="20" fill="url(#hi-glow-cyan)"/>
 
   <!-- Circuit &amp; Grid Overlay -->
-  <rect width="1180" height="270" rx="20" fill="url(#hi-grid)"/>
+  <rect width="1180" height="300" rx="20" fill="url(#hi-grid)"/>
 
   <!-- Floating Micro Particles -->
   <g opacity="0.6">
     <circle cx="90" cy="40" r="1.5" fill="#3B82F6" class="bg-particle"/>
     <circle cx="590" cy="25" r="2.0" fill="#06B6D4" class="bg-particle" style="animation-delay: -3s;"/>
     <circle cx="1060" cy="50" r="1.5" fill="#8B5CF6" class="bg-particle" style="animation-delay: -6s;"/>
-    <text x="48" y="256" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8" opacity="0.35">&lt;developer_profile&gt;</text>
-    <text x="1030" y="256" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC" opacity="0.35">&lt;/developer_profile&gt;</text>
+    <text x="48" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8" opacity="0.35">&lt;developer_profile&gt;</text>
+    <text x="1030" y="285" font-family="'JetBrains Mono', monospace" font-size="11" fill="#C084FC" opacity="0.35">&lt;/developer_profile&gt;</text>
   </g>
 
   <!-- Outer Canvas Border -->
-  <rect x="1" y="1" width="1178" height="268" rx="19" fill="none" stroke="url(#hi-border-anim)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1178" height="298" rx="19" fill="none" stroke="url(#hi-border-anim)" stroke-width="1.5"/>
 
   <!-- ================================================================= -->
   <!-- MAIN FULL-WIDTH GLASS CARD: DEVELOPER HERO GREETING              -->
   <!-- ================================================================= -->
-  <g transform="translate(48, 20)">
+  <g transform="translate(48, 22)">
     <g class="badge-1 glass-card" filter="url(#hi-shadow)">
       <!-- Main Glass Body -->
-      <rect width="1084" height="226" rx="18" fill="url(#hi-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
+      <rect width="1084" height="254" rx="18" fill="url(#hi-card-bg)" stroke="#1E293B" stroke-width="1.2"/>
       
       <!-- Top Window Header Bar -->
-      <rect width="1084" height="34" rx="18" fill="url(#hi-term-header)"/>
-      <rect y="18" width="1084" height="16" fill="#1E293B"/>
+      <rect width="1084" height="36" rx="18" fill="url(#hi-term-header)"/>
+      <rect y="18" width="1084" height="18" fill="#1E293B"/>
 
       <!-- Window Control Buttons -->
-      <circle cx="20" cy="17" r="5" fill="#EF4444"/>
-      <circle cx="36" cy="17" r="5" fill="#F59E0B"/>
-      <circle cx="52" cy="17" r="5" fill="#10B981"/>
+      <circle cx="22" cy="18" r="5.5" fill="#EF4444"/>
+      <circle cx="38" cy="18" r="5.5" fill="#F59E0B"/>
+      <circle cx="54" cy="18" r="5.5" fill="#10B981"/>
 
       <!-- Window Title -->
-      <text x="542" y="21" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="middle">anas@developer: ~/welcome.sh</text>
+      <text x="542" y="22" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#94A3B8" text-anchor="middle">anas@developer: ~/welcome.sh</text>
 
-      <rect x="2" y="36" width="1080" height="2" fill="#FFFFFF" fill-opacity="0.12"/>
-      <rect width="1084" height="226" rx="18" fill="none" stroke="url(#hi-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
+      <rect x="2" y="38" width="1080" height="2" fill="#FFFFFF" fill-opacity="0.12"/>
+      <rect width="1084" height="254" rx="18" fill="none" stroke="url(#hi-border-anim)" stroke-width="1" stroke-opacity="0.35"/>
 
-      <!-- LEFT: Avatar Badge -->
-      <g transform="translate(26, 54)">
-        <rect width="72" height="72" rx="20" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
+      <!-- LEFT: Larger Avatar Badge -->
+      <g transform="translate(26, 56)">
+        <rect width="80" height="80" rx="22" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
         <g class="waving-hand">
-          <text x="36" y="48" font-family="'Inter', sans-serif" font-size="36" text-anchor="middle">👋</text>
+          <text x="40" y="54" font-family="'Inter', sans-serif" font-size="42" text-anchor="middle">👋</text>
         </g>
       </g>
 
-      <!-- FULL WIDTH CENTER CONTENT WITH ELEGANT VERTICAL SPACING -->
-      <g transform="translate(116, 52)">
-        <!-- Hero Headline -->
-        <text x="0" y="22" font-family="'Inter', system-ui, sans-serif" font-size="27" font-weight="900" fill="url(#hero-title-grad)" letter-spacing="0.4">
+      <!-- FULL WIDTH CENTER CONTENT WITH PROMINENT BOLD TYPOGRAPHY -->
+      <g transform="translate(124, 56)">
+        <!-- Hero Headline (32px Extra Bold) -->
+        <text x="0" y="26" font-family="'Inter', system-ui, sans-serif" font-size="32" font-weight="900" fill="url(#hero-title-grad)" letter-spacing="0.5">
           Hi 👋 I'm Mohamed Anas A
         </text>
 
-        <!-- Role Subtitle Pill (18px gap after headline) -->
-        <g transform="translate(0, 36)">
-          <rect width="440" height="26" rx="13" fill="url(#pill-glow)" stroke="#38BDF8" stroke-width="0.8"/>
-          <circle cx="16" cy="13" r="3.5" fill="#22C55E" filter="url(#hi-glow)">
+        <!-- Role Subtitle Pill (30px Height, 12px Bold Font) -->
+        <g transform="translate(0, 40)">
+          <rect width="490" height="30" rx="15" fill="url(#pill-glow)" stroke="#38BDF8" stroke-width="1"/>
+          <circle cx="18" cy="15" r="4" fill="#22C55E" filter="url(#hi-glow)">
             <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
           </circle>
-          <text x="26" y="17" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="0.3">
-            Full Stack Developer • Java Enthusiast • Cloud Learner
+          <text x="30" y="20" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#38BDF8" letter-spacing="0.5">
+            FULL STACK ENGINEER • JAVA &amp; SPRING BOOT • AWS CLOUD
           </text>
         </g>
 
-        <!-- Paragraph Text Lines (24px gap after role pill) -->
-        <g transform="translate(0, 84)">
-          <text x="0" y="0" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">
-            I'm a passionate <tspan fill="#F8FAFC" font-weight="700">Full Stack Developer</tspan> focused on building scalable, production-grade web applications using <tspan fill="#F59E0B" font-weight="700">Java</tspan>, <tspan fill="#34D399" font-weight="700">Spring Boot</tspan>, and
+        <!-- Prominent Paragraph Description (15px Font, 26px Line Height) -->
+        <g transform="translate(0, 96)">
+          <text x="0" y="0" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">
+            Passionate <tspan fill="#FFFFFF" font-weight="800">Full Stack Engineer</tspan> architecting high-performance, enterprise web apps using <tspan fill="#F59E0B" font-weight="800">Java</tspan>, <tspan fill="#34D399" font-weight="800">Spring Boot</tspan>,
           </text>
-          <text x="0" y="22" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">
-            <tspan fill="#38BDF8" font-weight="700">React</tspan>. I enjoy designing clean backend architectures, crafting smooth frontend experiences, and deploying cloud-native
+          <text x="0" y="26" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">
+            and <tspan fill="#38BDF8" font-weight="800">React</tspan>. Dedicated to engineering clean REST APIs, intuitive user interfaces, and resilient cloud infrastructure
           </text>
-          <text x="0" y="44" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">
-            solutions with <tspan fill="#F59E0B" font-weight="700">AWS</tspan>, <tspan fill="#38BDF8" font-weight="700">Docker</tspan>, and modern <tspan fill="#C084FC" font-weight="700">DevOps</tspan> practices.
+          <text x="0" y="52" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">
+            with <tspan fill="#F59E0B" font-weight="800">AWS</tspan>, <tspan fill="#38BDF8" font-weight="800">Docker</tspan>, and modern <tspan fill="#C084FC" font-weight="800">DevOps</tspan> pipelines.
           </text>
         </g>
 
-        <!-- Quote Line Banner (22px gap after paragraph text) -->
-        <g transform="translate(0, 154)">
-          <line x1="0" y1="0" x2="936" y2="0" stroke="#1E293B" stroke-width="1"/>
-          <text x="0" y="16" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#C084FC" font-style="italic">
+        <!-- Poetic Quote Banner (13.5px Semi-Bold Italic) -->
+        <g transform="translate(0, 172)">
+          <line x1="0" y1="0" x2="936" y2="0" stroke="#1E293B" stroke-width="1.2"/>
+          <text x="0" y="18" font-family="'Inter', sans-serif" font-size="13.5" font-weight="600" fill="#C084FC" font-style="italic">
             💬 "Code is like poetry — clarity, structure, and elegance matter as much as functionality."
           </text>
         </g>
