@@ -163,14 +163,14 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════════
-     TROPHIES
+     DEVELOPER ACHIEVEMENTS
 ═══════════════════════════════════════════════════════════════════ -->
 
-## 🏆 GitHub Trophies
+## 🏆 Developer Achievements
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=Anas3212&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
+![Mohamed Anas A — Developer Achievements](achievements.svg)
 
 </div>
 
