@@ -279,6 +279,10 @@ I'm a passionate **Full Stack Developer** focused on building scalable, producti
 
 <br/>
 
+[![Visitors](https://komarev.com/ghpvc/?username=Anas3212&label=REAL%20PROFILE%20VIEWS&color=7C3AED&style=for-the-badge)](https://github.com/Anas3212)
+
+<br/><br/>
+
 <sub>
 
 ⭐ **[Star this repo](https://github.com/Anas3212)** if you found it inspiring · Built with 🖤 and lots of ☕

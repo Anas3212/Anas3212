@@ -274,8 +274,8 @@
           <circle cx="0" cy="-70" r="4.5" fill="#FFFFFF" filter="url(#qv-glow)"/>
 
           <!-- Center Visitor Count Text -->
-          <text x="0" y="8" font-family="'JetBrains Mono', monospace" font-size="42" font-weight="800" fill="#F8FAFC" text-anchor="middle">25</text>
-          <text x="0" y="28" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="1" text-anchor="middle">PROFILE VIEWS</text>
+          <text x="0" y="8" font-family="'JetBrains Mono', monospace" font-size="42" font-weight="800" fill="#F8FAFC" text-anchor="middle">26</text>
+        <text x="0" y="28" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="1" text-anchor="middle">PROFILE VIEWS</text>
           <text x="0" y="48" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle">👥</text>
         </g>
 
@@ -354,7 +354,7 @@
             <rect x="14" y="14" width="40" height="40" rx="10" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-opacity="0.4"/>
             <text x="34" y="39" font-family="'Inter', sans-serif" font-size="18" text-anchor="middle">📈</text>
             <text x="64" y="28" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">Total Views</text>
-            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">25 <tspan font-size="11" fill="#22C55E" font-weight="700">+12%</tspan></text>
+            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">26 <tspan font-size="11" fill="#22C55E" font-weight="700">+12%</tspan></text>
           </g>
 
           <!-- Stat Card 2: This Week -->
@@ -363,7 +363,7 @@
             <rect x="14" y="14" width="40" height="40" rx="10" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-opacity="0.4"/>
             <text x="34" y="39" font-family="'Inter', sans-serif" font-size="18" text-anchor="middle">📅</text>
             <text x="64" y="28" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">This Week</text>
-            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">25 <tspan font-size="11" fill="#22C55E" font-weight="700">+8%</tspan></text>
+            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">26 <tspan font-size="11" fill="#22C55E" font-weight="700">+8%</tspan></text>
           </g>
 
           <!-- Stat Card 3: All Time -->
@@ -372,7 +372,7 @@
             <rect x="14" y="14" width="40" height="40" rx="10" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
             <text x="34" y="39" font-family="'Inter', sans-serif" font-size="18" text-anchor="middle">👤</text>
             <text x="64" y="28" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">All Time</text>
-            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">25</text>
+            <text x="64" y="48" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="800" fill="#F8FAFC">26</text>
             <text x="94" y="48" font-family="'Inter', sans-serif" font-size="9.5" fill="#64748B">Since launched</text>
           </g>
         </g>
